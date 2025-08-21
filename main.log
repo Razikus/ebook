@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.20)  21 AUG 2025 22:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.20)  22 AUG 2025 00:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1467,13 +1467,43 @@ Package lettrine.sty Info: Targeted height = 22.69649pt
 Cap\'{\i }tulo 7.
 Package lettrine.sty Info: Targeted height = 22.69649pt
 (lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 22.69646pt (L);
-(lettrine.sty)             reported on input line 5.
-) (./content/chapter9.tex
+(lettrine.sty)             Lettrine height = 22.69646pt (Y);
+(lettrine.sty)             reported on input line 4.
+
 
 [45
 
 ]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+\T1/SourceSansPro-TLF/regular/n/12 (+10) Minimize fi-eld as-sem-bly by using pr
+o-fes-si-o-nal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+\T1/SourceSansPro-TLF/regular/n/12 (+10) ca-ble as-sem-blies from LCSC Cus-tom 
+Ca-bles
+ []
+
+
+
+[47]
+
+[48]
+
+[49]
+
+[50]
+
+[51]) (./content/chapter9.tex
+
+[52]
 Cap\'{\i }tulo 8.
 Package lettrine.sty Info: Targeted height = 22.69649pt
 (lettrine.sty)             (for loversize=0, accent excluded),
@@ -1481,7 +1511,7 @@ Package lettrine.sty Info: Targeted height = 22.69649pt
 (lettrine.sty)             reported on input line 5.
 ) (./content/chapter10.tex
 
-[46
+[53
 
 ]
 Cap\'{\i }tulo 9.
@@ -1491,7 +1521,7 @@ Package lettrine.sty Info: Targeted height = 22.69649pt
 (lettrine.sty)             reported on input line 5.
 ) (./content/chapter11.tex
 
-[47
+[54
 
 ]
 Cap\'{\i }tulo 10.
@@ -1501,7 +1531,7 @@ Package lettrine.sty Info: Targeted height = 22.69649pt
 (lettrine.sty)             reported on input line 5.
 ) (./content/chapter12.tex
 
-[48
+[55
 
 ]
 Cap\'{\i }tulo 11.
@@ -1511,7 +1541,7 @@ Package lettrine.sty Info: Targeted height = 22.69649pt
 (lettrine.sty)             reported on input line 5.
 ) (./content/chapter13.tex
 
-[49
+[56
 
 ]
 Cap\'{\i }tulo 12.
@@ -1524,11 +1554,11 @@ Underfull \vbox (badness 1117) has occurred while \output is active []
 
 
 
-[50
+[57
 
 ]
 
-[51]
+[58]
 LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 76.
 LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/b/n' will be
@@ -1538,7 +1568,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[52]
+[59]
 Underfull \hbox (badness 3009) in paragraph at lines 104--105
 []\T1/SourceSansPro-TLF/regular/n/12 (+10) Remote up-date ca-pa-bi-lity is es-s
 en-tial but dan-ge-rous.
@@ -1549,9 +1579,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[53]
+[60]
 
-[54]
+[61]
 Underfull \hbox (badness 3612) in paragraph at lines 153--154
 []\T1/SourceSansPro-TLF/regular/n/12 (+10) Competitor pro-ducts of-fe-ring 50% 
 bet-ter pri-ce/-per-for-
@@ -1559,9 +1589,9 @@ bet-ter pri-ce/-per-for-
 
 
 
-[55]) (./content/appendix1.tex
+[62]) (./content/appendix1.tex
 
-[56]
+[63]
 Underfull \hbox (badness 10000) in paragraph at lines 14--16
 []\T1/SourceSansPro-TLF/bold/n/12 (+10) Mouser Elec-tro-nics \T1/SourceSansPro-
 TLF/regular/n/12 (+10) (https://www.mouser.com) Si-mi-lar
@@ -1578,7 +1608,7 @@ Underfull \vbox (badness 7415) has occurred while \output is active []
 
 
 
-[57
+[64
 
 ]
 Underfull \hbox (badness 3250) in paragraph at lines 33--35
@@ -1617,7 +1647,7 @@ n-te-gra-ted RFID, RTC, and
 
 
 
-[58]
+[65]
 Overfull \hbox (12.20932pt too wide) in paragraph at lines 52--54
 []\T1/SourceSansPro-TLF/bold/n/12 (-10) CM4/CM5 Pro-gram-mer \T1/SourceSansPro-
 TLF/regular/n/12 (-10) (https://shop.razniewski.eu/p/cm4prog)
@@ -1631,19 +1661,14 @@ Underfull \hbox (badness 7468) in paragraph at lines 52--54
 
 
 
-[59]
+[66]
 Underfull \vbox (badness 4595) has occurred while \output is active []
 
 
 
-[60])
+[67])
 
-[61] (./frontmatter/backpage.tex
-
-[62
-
-
-]
+[68] (./frontmatter/backpage.tex
 Underfull \hbox (badness 4673) in paragraph at lines 26--27
 []\T1/SourceSansPro-TLF/regular/n/12 (+10) This prac-ti-cal guide ta-kes you fr
 om pro-totype
@@ -1663,18 +1688,25 @@ ro-duc-tion
 
 )
 
-[63] (./main.aux)
+[69
+
+
+] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 23942 strings out of 473190
- 489409 string characters out of 5715800
- 1233442 words of memory out of 5000000
- 46401 multiletter control sequences out of 15000+600000
- 806116 words of font info for 289 fonts, out of 8000000 for 9000
+ 23952 strings out of 473190
+ 489667 string characters out of 5715800
+ 1234440 words of memory out of 5000000
+ 46407 multiletter control sequences out of 15000+600000
+ 806660 words of font info for 292 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,108p,1047b,1527s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/adobe/sourcecodepro/SourceCod
@@ -1684,10 +1716,10 @@ ourcecodepro/SourceCodePro-Regular.pfb></usr/local/texlive/2025/texmf-dist/font
 s/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb></usr/local/texlive/2025/tex
 mf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-It.pfb></usr/local/texliv
 e/2025/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb>
-Output written on main.pdf (73 pages, 470802 bytes).
+Output written on main.pdf (79 pages, 481361 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 202 compressed objects within 3 object streams
+ 331 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  100466 words of extra memory for PDF output out of 106986 (max. 10000000)
 

@@ -63,33 +63,44 @@
 \contentsline {section}{\numberline {5.13}Pre-Deployment Checklist}{43}{}%
 \contentsline {chapter}{\numberline {6}Key checklist for production hardware}{44}{}%
 \contentsline {chapter}{\numberline {7}From spider into first 5 PCB}{45}{}%
-\contentsline {chapter}{\numberline {8}Test the process}{46}{}%
-\contentsline {chapter}{\numberline {9}Certification}{47}{}%
-\contentsline {chapter}{\numberline {10}First 100 boards}{48}{}%
-\contentsline {chapter}{\numberline {11}Document process}{49}{}%
-\contentsline {chapter}{\numberline {12}Repeat}{50}{}%
-\contentsline {section}{\numberline {12.1}The Iteration Mindset}{50}{}%
-\contentsline {section}{\numberline {12.2}Version Control for Hardware}{51}{}%
-\contentsline {section}{\numberline {12.3}Production Checklist}{51}{}%
-\contentsline {section}{\numberline {12.4}Common Pitfalls}{51}{}%
-\contentsline {subsection}{\numberline {12.4.1}The Feature Creep Trap}{51}{}%
-\contentsline {subsection}{\numberline {12.4.2}Cost Optimization Timing}{52}{}%
-\contentsline {section}{\numberline {12.5}Code Quality in Production}{52}{}%
-\contentsline {section}{\numberline {12.6}Remote Updates}{54}{}%
-\contentsline {section}{\numberline {12.7}Scaling Challenges}{54}{}%
-\contentsline {subsection}{\numberline {12.7.1}Supply Chain Management}{54}{}%
-\contentsline {subsection}{\numberline {12.7.2}Quality Assurance}{55}{}%
-\contentsline {section}{\numberline {12.8}When to Stop}{55}{}%
-\contentsline {section}{\numberline {12.9}Building Your Next Product}{55}{}%
-\contentsline {section}{\numberline {12.10}The Long Game}{56}{}%
-\contentsline {chapter}{Appendix: Essential Resources}{57}{}%
-\contentsline {section}{\numberline {12.11}Component Sourcing}{57}{}%
-\contentsline {section}{\numberline {12.12}Manufacturing Partners}{58}{}%
-\contentsline {subsection}{\numberline {12.12.1}PCB Manufacturing}{58}{}%
-\contentsline {subsection}{\numberline {12.12.2}Mechanical Manufacturing}{58}{}%
-\contentsline {section}{\numberline {12.13}Raspberry Pi Compute Module Solutions}{59}{}%
-\contentsline {section}{\numberline {12.14}Cloud Infrastructure}{59}{}%
-\contentsline {section}{\numberline {12.15}Software Development}{59}{}%
-\contentsline {section}{\numberline {12.16}Evaluation Criteria}{60}{}%
-\contentsline {section}{\numberline {12.17}Cost Optimization Strategy}{60}{}%
-\contentsline {section}{\numberline {12.18}Warning: Supplier Risks}{61}{}%
+\contentsline {section}{\numberline {7.1}The Fundamental Rule: No Manual Soldering}{45}{}%
+\contentsline {section}{\numberline {7.2}JLCPCB Manufacturing Process}{46}{}%
+\contentsline {section}{\numberline {7.3}Cost Considerations}{46}{}%
+\contentsline {section}{\numberline {7.4}Custom Cables Integration}{47}{}%
+\contentsline {section}{\numberline {7.5}Design for Assembly (DFA)}{48}{}%
+\contentsline {section}{\numberline {7.6}Version Control and Documentation}{49}{}%
+\contentsline {section}{\numberline {7.7}First 5 PCB Strategy}{50}{}%
+\contentsline {section}{\numberline {7.8}Quality Validation Process}{50}{}%
+\contentsline {section}{\numberline {7.9}Common First PCB Issues}{51}{}%
+\contentsline {section}{\numberline {7.10}Preparing for Next Iteration}{51}{}%
+\contentsline {section}{\numberline {7.11}Success Metrics}{52}{}%
+\contentsline {chapter}{\numberline {8}Test the process}{53}{}%
+\contentsline {chapter}{\numberline {9}Certification}{54}{}%
+\contentsline {chapter}{\numberline {10}First 100 boards}{55}{}%
+\contentsline {chapter}{\numberline {11}Document process}{56}{}%
+\contentsline {chapter}{\numberline {12}Repeat}{57}{}%
+\contentsline {section}{\numberline {12.1}The Iteration Mindset}{57}{}%
+\contentsline {section}{\numberline {12.2}Version Control for Hardware}{58}{}%
+\contentsline {section}{\numberline {12.3}Production Checklist}{58}{}%
+\contentsline {section}{\numberline {12.4}Common Pitfalls}{58}{}%
+\contentsline {subsection}{\numberline {12.4.1}The Feature Creep Trap}{58}{}%
+\contentsline {subsection}{\numberline {12.4.2}Cost Optimization Timing}{59}{}%
+\contentsline {section}{\numberline {12.5}Code Quality in Production}{59}{}%
+\contentsline {section}{\numberline {12.6}Remote Updates}{61}{}%
+\contentsline {section}{\numberline {12.7}Scaling Challenges}{61}{}%
+\contentsline {subsection}{\numberline {12.7.1}Supply Chain Management}{61}{}%
+\contentsline {subsection}{\numberline {12.7.2}Quality Assurance}{62}{}%
+\contentsline {section}{\numberline {12.8}When to Stop}{62}{}%
+\contentsline {section}{\numberline {12.9}Building Your Next Product}{62}{}%
+\contentsline {section}{\numberline {12.10}The Long Game}{63}{}%
+\contentsline {chapter}{Appendix: Essential Resources}{64}{}%
+\contentsline {section}{\numberline {12.11}Component Sourcing}{64}{}%
+\contentsline {section}{\numberline {12.12}Manufacturing Partners}{65}{}%
+\contentsline {subsection}{\numberline {12.12.1}PCB Manufacturing}{65}{}%
+\contentsline {subsection}{\numberline {12.12.2}Mechanical Manufacturing}{65}{}%
+\contentsline {section}{\numberline {12.13}Raspberry Pi Compute Module Solutions}{66}{}%
+\contentsline {section}{\numberline {12.14}Cloud Infrastructure}{66}{}%
+\contentsline {section}{\numberline {12.15}Software Development}{66}{}%
+\contentsline {section}{\numberline {12.16}Evaluation Criteria}{67}{}%
+\contentsline {section}{\numberline {12.17}Cost Optimization Strategy}{67}{}%
+\contentsline {section}{\numberline {12.18}Warning: Supplier Risks}{68}{}%
