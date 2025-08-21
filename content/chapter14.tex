@@ -1,0 +1,180 @@
+% Chapter XIII
+\chapter{Repeat}
+
+\lettrine{S}{caling from your first} successful product to a sustainable business requires systematic repetition of proven processes. After shipping your first 100 boards, the temptation is to celebrate and move on to the next idea. Resist this urge.
+
+The real profit comes from iteration and refinement of existing products. Each production run teaches you something new about manufacturing, quality control, and customer needs.
+
+\section{The Iteration Mindset}
+
+Every production run is an experiment. Document what works and what doesn't. Your goal is to reduce the time between identifying a market need and delivering a solution.
+
+\begin{quote}
+\textit{"The first version of your product will be wrong. The second version will be less wrong. By the tenth version, you might actually have something customers want to pay for."} — Manufacturing wisdom
+\end{quote}
+
+\section{Version Control for Hardware}
+
+Unlike software, hardware versions are expensive. Each PCB revision costs money and time. Establish clear criteria for when to rev your board:
+
+\begin{itemize}
+\item Critical bugs that affect more than 5\% of units
+\item Component obsolescence forcing a redesign
+\item Cost reduction opportunities greater than 15\%
+\item Customer-requested features with proven demand
+\end{itemize}
+
+\section{Production Checklist}
+
+Before each production run, verify these items:
+
+\begin{enumerate}
+\item \textbf{Component availability} — Check lead times for all parts
+\item \textbf{Assembly house capacity} — Confirm production slots
+\item \textbf{Test procedures} — Update based on field failures
+\item \textbf{Packaging} — Ensure adequate protection for shipping
+\item \textbf{Documentation} — Update assembly drawings and BOMs
+\end{enumerate}
+
+\section{Common Pitfalls}
+
+\subsection{The Feature Creep Trap}
+
+Customers will request endless features. Not all feedback is worth implementing. Ask yourself:
+\begin{itemize}
+\item Does this solve a real problem for multiple customers?
+\item Can we implement it without major redesign?
+\item Will this feature increase or decrease reliability?
+\end{itemize}
+
+\subsection{Cost Optimization Timing}
+
+Don't optimize costs too early. Wait until you have:
+\begin{itemize}
+\item Stable hardware design (no major revisions for 6 months)
+\item Predictable demand (at least 3 consecutive successful production runs)
+\item Clear understanding of failure modes
+\end{itemize}
+
+\section{Code Quality in Production}
+
+Your software must be bulletproof. Here's a minimal checklist for production code:
+
+\begin{tcolorbox}[colback=gray!5,colframe=gray!50,title=Production Validation Script]
+\begin{lstlisting}[
+  language=bash,
+  basicstyle=\small\ttfamily,
+  keywordstyle=\color{blue}\bfseries,
+  commentstyle=\color{green!50!black}\itshape,
+  stringstyle=\color{red},
+  showstringspaces=false,
+  breaklines=true,
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  frame=none
+]
+#!/bin/bash
+# Pre-deployment checklist
+echo "Running production code validation..."
+
+# Check for debug statements
+if grep -r "console.log|print|debug" src/; then
+    echo "ERROR: Debug statements found!"
+    exit 1
+fi
+
+# Verify error handling
+if ! grep -r "try|catch|except" src/; then
+    echo "WARNING: No error handling found"
+fi
+
+# Check for hardcoded values
+if grep -r "192.168|localhost|127.0.0.1" src/; then
+    echo "ERROR: Hardcoded network values found!"
+    exit 1
+fi
+
+echo "Code validation passed"
+\end{lstlisting}
+\end{tcolorbox}
+
+\section{Remote Updates}
+
+\begin{tcolorbox}[colback=yellow!10,colframe=orange!75!black,title=Caution: Remote Updates]
+Remote update capability is essential but dangerous. Always implement:
+\begin{itemize}
+\item Rollback mechanism for failed updates
+\item Cryptographic signature verification
+\item Staged rollout (update 10\% of devices first)
+\item Manual recovery method (physical button or jumper)
+\end{itemize}
+
+A failed update that bricks devices in the field will destroy your reputation overnight.
+\end{tcolorbox}
+
+\section{Scaling Challenges}
+
+\subsection{Supply Chain Management}
+
+As you scale beyond 1000 units per year, component sourcing becomes critical:
+
+\begin{itemize}
+\item Establish relationships with multiple suppliers
+\item Monitor component lifecycle status monthly
+\item Maintain 3-6 months of critical component inventory
+\item Design alternative footprints for key components
+\end{itemize}
+
+\subsection{Quality Assurance}
+
+Your test coverage must scale with production volume:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Production Volume} & \textbf{Test Coverage} & \textbf{Sample Size} \\
+\hline
+1-10 units & 100\% functional test & All units \\
+11-100 units & Functional + burn-in & All units \\
+100+ units & Statistical sampling & 10\% + outliers \\
+\hline
+\end{tabular}
+\caption{Recommended testing strategy by volume}
+\end{table}
+
+\section{When to Stop}
+
+Know when to discontinue a product. Clear exit criteria prevent endless resource drain:
+
+\begin{itemize}
+\item Declining sales for 3 consecutive quarters
+\item Component obsolescence requiring major redesign
+\item Competitor products offering 50\% better price/performance
+\item Support costs exceeding gross profit margin
+\end{itemize}
+
+The hardest decision in hardware is knowing when to stop improving and ship, and knowing when to stop shipping and move on.
+
+\section{Building Your Next Product}
+
+Use lessons from your first product to accelerate the second:
+
+\begin{enumerate}
+\item Reuse proven hardware blocks (power supplies, communication interfaces)
+\item Maintain design consistency (connector types, mounting holes)
+\item Leverage existing supplier relationships
+\item Apply learned failure modes to new designs
+\end{enumerate}
+
+The second product should take 60\% of the time the first one did. The third should take 40\%. If it's taking longer, you're not learning from your mistakes.
+
+\section{The Long Game}
+
+Building a sustainable hardware business requires patience and persistence. Your goal is not just to ship one successful product, but to build repeatable processes that can generate multiple successful products over time.
+
+Document everything. Every mistake, every successful solution, every supplier relationship. This knowledge becomes your competitive advantage.
+
+Success in hardware comes not from building one perfect product, but from building an imperfect product, learning from its flaws, and systematically improving with each iteration.
+
+The companies that win are those that can iterate fastest while maintaining quality. Speed matters, but consistency matters more.

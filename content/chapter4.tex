@@ -1,0 +1,248 @@
+% Chapter IV
+\chapter{Build a "spider" prototype}
+
+\lettrine{Y}{ou've analyzed the problem} and selected components. Now comes the critical validation phase: proving your concept actually works before committing to PCB design and production tooling.
+
+This is the transition from TRL 3 (experimental proof of concept) to TRL 4 (technology validated in lab). The "spider" prototype gets its name from the web of jumper wires connecting components - it looks chaotic but serves a crucial purpose.
+
+\section{The Technology Readiness Level Context}
+
+Understanding where you are in the development process prevents premature optimization:
+
+\textbf{TRL 1-2:} Basic principles and concept formulation (completed in analysis phase)
+\textbf{TRL 3:} Experimental proof of concept (what we're building now)
+\textbf{TRL 4:} Technology validated in lab environment (our goal for this chapter)
+\textbf{TRL 5-6:} Validation in relevant/operational environment (future chapters)
+\textbf{TRL 7-9:} System demonstration and proven operation (production phase)
+
+\section{Spider Prototype Objectives}
+
+The spider prototype must validate every critical function:
+
+\textbf{For our time attendance system:}
+\begin{itemize}
+\item RFID reader successfully captures UID
+\item CM4 maintains stable internet connection
+\item System executes REST API calls reliably
+\item Buzzer provides audio feedback
+\item GPIO controls function correctly
+\item Data persistence works (file or database)
+\item Web interface displays collected data
+\end{itemize}
+
+\section{Minimal Software Requirements}
+
+Write the simplest possible code that exercises every function:
+
+\begin{tcolorbox}[colback=gray!5,colframe=gray!50,title=Basic Validation Script]
+\begin{lstlisting}[language=Python,basicstyle=\small\ttfamily]
+import time
+import requests
+from razrc522.rfid import RFID
+from razrc522.easyrfid import EasyRFID, EasyRFIDUIDMode, EasyRFIDAuth
+reader = RFID(antenna_gain=7, logger=None)
+easyRFID = EasyRFID(reader, mode=EasyRFIDUIDMode.HEX)
+def test_network():
+    try:
+        response = requests.get('https://httpbin.org/get', timeout=5)
+        return response.status_code == 200
+    except:
+        return False
+def read_rfid_card():
+    try:
+        convertedUID, rawUID = easyRFID.wait_and_select()
+        block = 0
+        # Standard MIFARE 1k key
+        authorized = easyRFID.authorize(EasyRFIDAuth.AuthB, 
+                                      [0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF], 
+                                      rawUID, block)
+        if authorized:
+            readed = easyRFID.read_block(block)
+            ....
+...
+\end{lstlisting}
+\end{tcolorbox}
+
+\section{Critical Validation Questions}
+
+Run your spider prototype and systematically evaluate:
+
+\subsection{Basic Functionality}
+\begin{itemize}
+\item \textbf{Does it work at all?} Can you complete the full cycle without errors?
+\item \textbf{How cumbersome is interaction?} Does RFID reading require multiple attempts?
+\item \textbf{Response time:} How fast does the system respond to card presentation?
+\item \textbf{Reliability:} Test the same operation 50 times - how many succeed?
+\end{itemize}
+
+\subsection{Environmental Factors}
+\begin{itemize}
+\item \textbf{Heat generation:} Does the CM4 require cooling under normal operation?
+\item \textbf{Power consumption:} Measure actual current draw vs. specifications
+\item \textbf{Voltage compatibility:} Verify 3.3V GPIO levels work with your peripherals
+\item \textbf{EMI sensitivity:} Do nearby phones or WiFi networks cause interference?
+\end{itemize}
+
+\subsection{Persistence Testing}
+\begin{itemize}
+\item \textbf{24-hour test:} Does the system work reliably after running overnight?
+\item \textbf{1-hour stress test:} Continuous operation with frequent card reads
+\item \textbf{Network interruption:} How does the system behave when WiFi disconnects?
+\item \textbf{Power cycle recovery:} Does it restart cleanly after power loss?
+\end{itemize}
+
+\begin{tcolorbox}[colback=red!10,colframe=red!75!black,title=Critical Voltage Warning]
+Raspberry Pi GPIO operates at 3.3V, not 5V. Connecting 5V signals to GPIO pins will damage your CM4. Always verify peripheral voltage requirements and use level shifters when necessary.
+\end{tcolorbox}
+
+\section{Spider Prototype Assembly}
+
+\textbf{Option 1: Individual Components}
+
+\textbf{Required components for time attendance validation:}
+\begin{itemize}
+\item CM4 on development carrier board (Waveshare CM4-IO-BASE-C or similar)
+\item RC522 RFID module
+\item Buzzer (3.3V compatible)
+\item LED for status indication
+\item Breadboard and jumper wires
+\item RFID cards/tags for testing
+\end{itemize}
+
+\textbf{Connection diagram:}
+\begin{verbatim}
+RC522 -> CM4 GPIO
+SDA   -> GPIO 8  (SPI CE0)
+SCK   -> GPIO 11 (SPI CLK)
+MOSI  -> GPIO 10 (SPI MOSI)
+MISO  -> GPIO 9  (SPI MISO)
+RST   -> GPIO 25
+3.3V  -> 3.3V
+GND   -> GND
+
+Buzzer -> GPIO 18
+LED    -> GPIO 24 (with current limiting resistor)
+\end{verbatim}
+
+\textbf{Option 2: Complete RFID Solution}
+
+For faster prototyping, use the complete CM4 RFID board (https://shop.razniewski.eu/p/cm4pb) which includes CM4, RFID reader, and all necessary interfaces pre-integrated. This eliminates wiring complexity and reduces validation time to software testing only.
+
+\section{Iteration and Refinement}
+
+Spider prototypes exist to fail safely. Expect multiple iterations:
+
+\textbf{Common first iteration failures:}
+\begin{itemize}
+\item RFID reading inconsistent (adjust antenna positioning)
+\item Network timeouts (implement retry logic)
+\item GPIO conflicts (verify pin assignments)
+\item Power supply inadequate (check current requirements)
+\end{itemize}
+
+\textbf{Performance optimization targets:}
+\begin{itemize}
+\item RFID read success rate > 95\%
+\item Response time < 2 seconds
+\item Network operation timeout < 5 seconds
+\item System uptime > 24 hours without intervention
+\end{itemize}
+
+\textbf{Material interference testing:}
+Test RFID scanning through different materials, particularly those you plan to use for the final enclosure:
+\begin{itemize}
+\item Plastic enclosure materials (ABS, polycarbonate)
+\item Metal proximity effects (mounting screws, brackets)
+\item Glass or acrylic cover materials
+\item Varying material thicknesses
+\end{itemize}
+
+\section{Component Validation Results}
+
+After spider prototype testing, you'll know definitively:
+
+\textbf{Keep these components if:}
+\begin{itemize}
+\item Functionality works reliably in spider configuration
+\item Performance meets your requirements
+\item Heat generation is manageable
+\item Cost targets are achievable
+\end{itemize}
+
+\textbf{Reconsider components if:}
+\begin{itemize}
+\item Reliability issues persist after optimization attempts
+\item Performance significantly below expectations
+\item Integration complexity exceeds development budget
+\item Alternative components offer substantial advantages
+\end{itemize}
+
+\section{Decision Point: PCB or Software First}
+
+With validated spider prototype, choose your next development path:
+
+\textbf{PCB Design First:}
+\begin{itemize}
+\item Hardware functionality proven stable
+\item Mechanical constraints well understood
+\item Production timeline pressure
+\item External PCB design resources available
+\end{itemize}
+
+\textbf{Software Development First:}
+\begin{itemize}
+\item Complex software requirements
+\item User interface needs refinement
+\item Integration with external systems required
+\item Software team available in-house
+\end{itemize}
+
+\textbf{My typical approach:} Software development while PCB design proceeds in parallel. Software can be developed and tested on spider prototype while PCB layout is completed by external partners.
+
+\section{External PCB Design Considerations}
+
+Most hardware entrepreneurs benefit from partnering with PCB design specialists rather than learning complex layout tools.
+
+\textbf{First PCB reality check:}
+Your first PCB will not be ready for final enclosure integration. Accept this from the start.
+
+At this point, consider your enclosure strategy by reviewing the Appendix resources:
+\begin{itemize}
+\item \textbf{Kradex:} Standard enclosures for cost-effective solutions
+\item \textbf{Cubic Inch:} Custom 3D printed enclosures for unique requirements
+\end{itemize}
+
+\textbf{Think about placement and constraints, but don't optimize yet:}
+\begin{itemize}
+\item How will components be positioned relative to each other?
+\item What connectors need external access?
+\item Where will status indicators be visible?
+\item How will the RFID antenna be oriented?
+\end{itemize}
+
+Mechanical constraints will change as you iterate. The PCB will evolve significantly between first prototype and production version.
+
+\textbf{Prepare for external PCB design:}
+\begin{itemize}
+\item Detailed pinout documentation from spider prototype
+\item Basic mechanical requirements (board size, connector positions)
+\item Performance requirements (signal integrity, EMI considerations)
+\item Manufacturing constraints (assembly capabilities, test points)
+\end{itemize}
+
+\textbf{Iteration expectation:} Plan for 2 PCB iterations minimum. The first validates electrical functionality. The second optimizes for mechanical integration and manufacturing.
+
+\section{Moving to Implementation}
+
+Your spider prototype has validated the core technology. You now have:
+\begin{itemize}
+\item Proven component functionality
+\item Working software foundation
+\item Performance baselines
+\item Integration challenges identified
+\item Development path clarity
+\end{itemize}
+
+The next phase involves either developing production software on your proven hardware platform or translating the spider prototype into a proper PCB design that maintains the validated functionality while enabling efficient manufacturing.
+
+Remember: the spider prototype's job is to fail fast and fail cheap. Every failure discovered here saves weeks of debugging production hardware later.

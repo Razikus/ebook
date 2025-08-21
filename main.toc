@@ -1,0 +1,95 @@
+\babel@toc {brazilian}{}\relax 
+\contentsline {chapter}{Preambule}{iii}{}%
+\contentsline {chapter}{\numberline {1}Analyzing the problem}{1}{}%
+\contentsline {section}{\numberline {1.1}The Problem Definition Framework}{1}{}%
+\contentsline {subsection}{\numberline {1.1.1}Step 1: Core Function Definition}{2}{}%
+\contentsline {subsection}{\numberline {1.1.2}Step 2: Core Function Problem Solve Proposal}{2}{}%
+\contentsline {subsection}{\numberline {1.1.3}Step 3: Authentication Requirements Analysis}{3}{}%
+\contentsline {subsection}{\numberline {1.1.4}Step 4: Interface Requirements}{4}{}%
+\contentsline {section}{\numberline {1.2}System Architecture Mapping}{5}{}%
+\contentsline {subsection}{\numberline {1.2.1}Time Attendance System Architecture}{6}{}%
+\contentsline {subsection}{\numberline {1.2.2}Self-Service Beer Machine Architecture}{6}{}%
+\contentsline {subsection}{\numberline {1.2.3}Smart Helmet Architecture}{7}{}%
+\contentsline {section}{\numberline {1.3}Constraint Analysis}{8}{}%
+\contentsline {subsection}{\numberline {1.3.1}Physical Constraints}{9}{}%
+\contentsline {subsection}{\numberline {1.3.2}Performance Constraints}{9}{}%
+\contentsline {subsection}{\numberline {1.3.3}Business Constraints}{9}{}%
+\contentsline {section}{\numberline {1.4}Common Analysis Mistakes}{10}{}%
+\contentsline {section}{\numberline {1.5}Moving to Implementation}{11}{}%
+\contentsline {chapter}{\numberline {2}Vision into Electronic Interfaces}{12}{}%
+\contentsline {section}{\numberline {2.1}Component Selection Process}{12}{}%
+\contentsline {subsection}{\numberline {2.1.1}Step 1: Identify Core Components}{12}{}%
+\contentsline {subsection}{\numberline {2.1.2}Step 2: RFID Reader Selection}{13}{}%
+\contentsline {subsection}{\numberline {2.1.3}Step 3: Processing Unit Selection}{14}{}%
+\contentsline {subsection}{\numberline {2.1.4}Step 4: Carrier Board Decision}{15}{}%
+\contentsline {section}{\numberline {2.2}Component Replaceability Strategy}{16}{}%
+\contentsline {section}{\numberline {2.3}Connector and Cable Strategy}{17}{}%
+\contentsline {section}{\numberline {2.4}Camera Integration Considerations}{17}{}%
+\contentsline {section}{\numberline {2.5}Microcontroller vs. Raspberry Pi Decision}{18}{}%
+\contentsline {section}{\numberline {2.6}Power and Performance Considerations}{19}{}%
+\contentsline {section}{\numberline {2.7}Validation and Testing Strategy}{19}{}%
+\contentsline {section}{\numberline {2.8}Documentation for Production}{20}{}%
+\contentsline {section}{\numberline {2.9}Moving Forward}{20}{}%
+\contentsline {chapter}{\numberline {3}Build a "spider" prototype}{22}{}%
+\contentsline {section}{\numberline {3.1}The Technology Readiness Level Context}{22}{}%
+\contentsline {section}{\numberline {3.2}Spider Prototype Objectives}{23}{}%
+\contentsline {section}{\numberline {3.3}Minimal Software Requirements}{23}{}%
+\contentsline {section}{\numberline {3.4}Critical Validation Questions}{25}{}%
+\contentsline {subsection}{\numberline {3.4.1}Basic Functionality}{25}{}%
+\contentsline {subsection}{\numberline {3.4.2}Environmental Factors}{25}{}%
+\contentsline {subsection}{\numberline {3.4.3}Persistence Testing}{25}{}%
+\contentsline {section}{\numberline {3.5}Spider Prototype Assembly}{26}{}%
+\contentsline {section}{\numberline {3.6}Iteration and Refinement}{27}{}%
+\contentsline {section}{\numberline {3.7}Component Validation Results}{28}{}%
+\contentsline {section}{\numberline {3.8}Decision Point: PCB or Software First}{29}{}%
+\contentsline {section}{\numberline {3.9}External PCB Design Considerations}{29}{}%
+\contentsline {section}{\numberline {3.10}Moving to Implementation}{31}{}%
+\contentsline {chapter}{\numberline {4}Write a software}{32}{}%
+\contentsline {chapter}{\numberline {5}Key checklist for production code}{33}{}%
+\contentsline {section}{\numberline {5.1}Remote Update Capability}{33}{}%
+\contentsline {section}{\numberline {5.2}SSH Access Strategy}{35}{}%
+\contentsline {section}{\numberline {5.3}Operating System Selection}{36}{}%
+\contentsline {subsection}{\numberline {5.3.1}Custom Raspbian Build}{36}{}%
+\contentsline {subsection}{\numberline {5.3.2}Balena OS Alternative}{37}{}%
+\contentsline {section}{\numberline {5.4}Multiple Connectivity Options}{38}{}%
+\contentsline {section}{\numberline {5.5}Zero-Configuration User Experience}{38}{}%
+\contentsline {section}{\numberline {5.6}Power Supply Considerations}{39}{}%
+\contentsline {section}{\numberline {5.7}Hardware Boundary Enforcement}{39}{}%
+\contentsline {section}{\numberline {5.8}Automatic Recovery Mechanisms}{40}{}%
+\contentsline {section}{\numberline {5.9}Credential Security}{41}{}%
+\contentsline {section}{\numberline {5.10}Local Security}{42}{}%
+\contentsline {section}{\numberline {5.11}The Embedded Golden Rule}{42}{}%
+\contentsline {section}{\numberline {5.12}Two paths}{43}{}%
+\contentsline {section}{\numberline {5.13}Pre-Deployment Checklist}{43}{}%
+\contentsline {chapter}{\numberline {6}Key checklist for production hardware}{44}{}%
+\contentsline {chapter}{\numberline {7}From spider into first 5 PCB}{45}{}%
+\contentsline {chapter}{\numberline {8}Test the process}{46}{}%
+\contentsline {chapter}{\numberline {9}Certification}{47}{}%
+\contentsline {chapter}{\numberline {10}First 100 boards}{48}{}%
+\contentsline {chapter}{\numberline {11}Document process}{49}{}%
+\contentsline {chapter}{\numberline {12}Repeat}{50}{}%
+\contentsline {section}{\numberline {12.1}The Iteration Mindset}{50}{}%
+\contentsline {section}{\numberline {12.2}Version Control for Hardware}{51}{}%
+\contentsline {section}{\numberline {12.3}Production Checklist}{51}{}%
+\contentsline {section}{\numberline {12.4}Common Pitfalls}{51}{}%
+\contentsline {subsection}{\numberline {12.4.1}The Feature Creep Trap}{51}{}%
+\contentsline {subsection}{\numberline {12.4.2}Cost Optimization Timing}{52}{}%
+\contentsline {section}{\numberline {12.5}Code Quality in Production}{52}{}%
+\contentsline {section}{\numberline {12.6}Remote Updates}{54}{}%
+\contentsline {section}{\numberline {12.7}Scaling Challenges}{54}{}%
+\contentsline {subsection}{\numberline {12.7.1}Supply Chain Management}{54}{}%
+\contentsline {subsection}{\numberline {12.7.2}Quality Assurance}{55}{}%
+\contentsline {section}{\numberline {12.8}When to Stop}{55}{}%
+\contentsline {section}{\numberline {12.9}Building Your Next Product}{55}{}%
+\contentsline {section}{\numberline {12.10}The Long Game}{56}{}%
+\contentsline {chapter}{Appendix: Essential Resources}{57}{}%
+\contentsline {section}{\numberline {12.11}Component Sourcing}{57}{}%
+\contentsline {section}{\numberline {12.12}Manufacturing Partners}{58}{}%
+\contentsline {subsection}{\numberline {12.12.1}PCB Manufacturing}{58}{}%
+\contentsline {subsection}{\numberline {12.12.2}Mechanical Manufacturing}{58}{}%
+\contentsline {section}{\numberline {12.13}Raspberry Pi Compute Module Solutions}{59}{}%
+\contentsline {section}{\numberline {12.14}Cloud Infrastructure}{59}{}%
+\contentsline {section}{\numberline {12.15}Software Development}{59}{}%
+\contentsline {section}{\numberline {12.16}Evaluation Criteria}{60}{}%
+\contentsline {section}{\numberline {12.17}Cost Optimization Strategy}{60}{}%
+\contentsline {section}{\numberline {12.18}Warning: Supplier Risks}{61}{}%

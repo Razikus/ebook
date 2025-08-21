@@ -1,0 +1,70 @@
+\pagestyle{empty}  % Disable headers and footers on this page
+
+\cleardoublepage    % Ensure the following content starts on a right-hand page in double-sided layouts
+
+% =================
+% Back cover design
+% =================
+\begin{center}
+\begin{tikzpicture}[remember picture,overlay]
+
+    % White background
+    \fill[white] (current page.south west) rectangle (current page.north east);
+    
+    % Simple black border (matching front cover)
+    \draw[black, line width=2pt] 
+        ([xshift=20pt, yshift=20pt] current page.south west) rectangle 
+        ([xshift=-20pt, yshift=-20pt] current page.north east);
+
+    % Book description area
+    \node[black, text width=0.8\linewidth, align=justify, anchor=north] 
+        (description) at ([yshift=-80pt] current page.north) {
+        \textbf{Learn to build production-ready devices with Raspberry Pi Compute Module}
+        
+        \vspace{12pt}
+        
+        This practical guide takes you from prototype to market-ready product. Based on real experience from building and selling over 5,000 devices worldwide.
+        
+        \vspace{12pt}
+        
+        \textbf{What you'll learn:}
+        \begin{itemize}
+        \item Convert your vision into electronic interfaces
+        \item Choose the right peripherals and avoid costly mistakes
+        \item Build reliable prototypes and production PCBs
+        \item Write production-ready software with remote updates
+        \item Navigate certification processes
+        \item Scale from prototype to first 100 devices
+        \end{itemize}
+        
+        \vspace{12pt}
+        
+        \textbf{Perfect for:} Engineers, makers, and entrepreneurs who want to turn their Raspberry Pi projects into commercial products.
+    };
+
+    % Simple Raspberry Pi circuit pattern (bottom center)
+    \begin{scope}[remember picture, overlay, shift={($(current page.south)+(0,120pt)$)}]
+        % Circuit traces
+        \draw[black, line width=0.5pt] (-2,0) -- (2,0);
+        \draw[black, line width=0.5pt] (0,-1) -- (0,1);
+        \draw[black, line width=0.5pt] (-1.5,-0.5) -- (1.5,0.5);
+        \draw[black, line width=0.5pt] (-1.5,0.5) -- (1.5,-0.5);
+        
+        % Small circles representing components
+        \foreach \x/\y in {-1.5/0, -0.75/0.5, 0/0, 0.75/-0.5, 1.5/0} {
+            \fill[black] (\x,\y) circle (0.05);
+        }
+    \end{scope}
+
+    % Author name (bottom right)
+    \node[black, anchor=south east] 
+        at ([xshift=-40pt, yshift=40pt] current page.south east) 
+        {\textsc{\authorname}};
+
+    % Publisher name (bottom left)
+    \node[black, anchor=south west] 
+        at ([xshift=40pt, yshift=40pt] current page.south west) 
+        {\textsc{\publisher}};
+
+\end{tikzpicture}
+\end{center}

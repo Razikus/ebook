@@ -1,0 +1,1693 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.20)  21 AUG 2025 22:16
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count196
+\c@chapter=\count197
+\c@section=\count198
+\c@subsection=\count199
+\c@subsubsection=\count266
+\c@paragraph=\count267
+\c@subparagraph=\count268
+\c@figure=\count269
+\c@table=\count270
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(./misc/options.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2025/02/11 v3.2a Micro-typographical refinements (RS)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count271
+)
+\MT@toks=\toks18
+\MT@tempbox=\box52
+\MT@count=\count272
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
+LaTeX Info: Redefining \leftprotrusion on input line 1088.
+\MT@prot@toks=\toks19
+LaTeX Info: Redefining \rightprotrusion on input line 1107.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen142
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count273
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2025/02/11 v3.2a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip51
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2025/02/11 v3.2a microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLaT
+eX and XeLaTeX
+\babel@savecnt=\count274
+\U@D=\dimen143
+\l@unhyphenated=\language90
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count275
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/babel-portuges/brazilian.ldf
+Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
+Package babel Info: Hyphen rules for 'brazilian' set to \l@portuguese
+(babel)             (\language72). Reported on input line 111.
+Package babel Info: Making " an active character on input line 143.
+))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/babel/locale/pt/babel-brazilian
+.tex
+Package babel Info: Importing font and identification data for brazilian
+(babel)             from babel-pt-BR.ini. Reported on input line 11.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/lettrine/lettrine.sty
+File: lettrine.sty 2025-01-30 v2.80 (Daniel Flipo)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/xfp/xfp.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count276
+\l__pdf_internal_box=\box53
+))
+Package: xfp 2024-08-16 L3 Floating point unit
+)
+\c@DefaultLines=\count277
+\c@DefaultDepth=\count278
+\DefaultFindent=\dimen144
+\DefaultNindent=\dimen145
+\DefaultSlope=\dimen146
+\DiscardVskip=\dimen147
+\L@lettrine=\box54
+\L@lbox=\box55
+\L@tbox=\box56
+\c@L@lines=\count279
+\c@L@depth=\count280
+\L@Pindent=\dimen148
+\L@Findent=\dimen149
+\L@Nindent=\dimen150
+\L@lraise=\dimen151
+\L@first=\dimen152
+\L@next=\dimen153
+\L@slope=\dimen154
+\L@height=\dimen155
+\L@novskip=\dimen156
+\L@target@ht=\dimen157
+\L@target@dp=\dimen158
+\L@target@tht=\dimen159
+\LettrineWidth=\dimen160
+\LettrineHeight=\dimen161
+\LettrineDepth=\dimen162
+\L@finalht=\dimen163
+\L@finaldp=\dimen164
+Loading lettrine.cfg
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lettrine/lettrine.cfg)
+\Lettrine@tweaks=\toks20
+\Llist@everypar=\toks21
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen165
+\Gin@req@width=\dimen166
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/sourcesanspro/sourcesanspro.sty
+Package: sourcesanspro 2018/05/19 v2.7 Adobe's Source Sans Pro typeface
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks22
+\XKV@tempa@toks=\toks23
+)
+\XKV@depth=\count281
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/ly1/ly1enc.def
+File: ly1enc.def 2022/06/11 v0.8 TeX 'n ANSI encoding (DPC/KB)
+Now handling font encoding LY1 ...
+... processing UTF-8 mapping file for font encoding LY1
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/ly1enc.dfu
+File: ly1enc.dfu 2022/06/07 v1.3c UTF-8 support
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
+))))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks24
+\pgfutil@tempdima=\dimen167
+\pgfutil@tempdimb=\dimen168
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box57
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfil
+tered.code.tex
+\pgfkeys@tmptoks=\toks27
+))
+\pgf@x=\dimen169
+\pgf@y=\dimen170
+\pgf@xa=\dimen171
+\pgf@ya=\dimen172
+\pgf@xb=\dimen173
+\pgf@yb=\dimen174
+\pgf@xc=\dimen175
+\pgf@yc=\dimen176
+\pgf@xd=\dimen177
+\pgf@yd=\dimen178
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count282
+\c@pgf@countb=\count283
+\c@pgf@countc=\count284
+\c@pgf@countd=\count285
+\t@pgf@toka=\toks28
+\t@pgf@tokb=\toks29
+\t@pgf@tokc=\toks30
+\pgf@sys@id@count=\count286
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count287
+\pgfsyssoftpath@bigbuffer@items=\count288
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen179
+\pgfmath@count=\count289
+\pgfmath@box=\box58
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count290
+)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen180
+\pgf@picmaxx=\dimen181
+\pgf@picminy=\dimen182
+\pgf@picmaxy=\dimen183
+\pgf@pathminx=\dimen184
+\pgf@pathmaxx=\dimen185
+\pgf@pathminy=\dimen186
+\pgf@pathmaxy=\dimen187
+\pgf@xx=\dimen188
+\pgf@xy=\dimen189
+\pgf@yx=\dimen190
+\pgf@yy=\dimen191
+\pgf@zx=\dimen192
+\pgf@zy=\dimen193
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen194
+\pgf@path@lasty=\dimen195
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen196
+\pgf@shorten@start@additional=\dimen197
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box59
+\pgf@hbox=\box60
+\pgf@layerbox@main=\box61
+\pgf@picture@serial@count=\count291
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen198
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen199
+\pgf@pt@y=\dimen256
+\pgf@pt@temp=\dimen257
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen258
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen259
+\pgf@sys@shading@range@num=\count292
+\pgf@shadingcount=\count293
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box62
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box63
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen260
+\pgf@nodesepend=\dimen261
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen262
+\pgffor@skip=\dimen263
+\pgffor@stack=\toks34
+\pgffor@toks=\toks35
+))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count294
+\pgfplotmarksize=\dimen264
+)
+\tikz@lastx=\dimen265
+\tikz@lasty=\dimen266
+\tikz@lastxsaved=\dimen267
+\tikz@lastysaved=\dimen268
+\tikz@lastmovetox=\dimen269
+\tikz@lastmovetoy=\dimen270
+\tikzleveldistance=\dimen271
+\tikzsiblingdistance=\dimen272
+\tikz@figbox=\box64
+\tikz@figbox@bg=\box65
+\tikz@tempbox=\box66
+\tikz@tempbox@bg=\box67
+\tikztreelevel=\count295
+\tikznumberofchildren=\count296
+\tikznumberofcurrentchild=\count297
+\tikz@fig@count=\count298
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count299
+\pgfmatrixcurrentcolumn=\count300
+\pgf@matrix@numberofcolumns=\count301
+)
+\tikz@expandcount=\count302
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarymath.code.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryfpu.code.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
+e.tex))
+\tikz@math@for@depth=\count303
+\tikz@math@dimen=\dimen273
+\tikz@math@toks=\toks36
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf-blur/tikzlibraryshadows.blur.
+code.tex  v1.02, 2012/12/09
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings
+.code.tex
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+\pgfbs@fading@count=\count304
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgfornament/pgfornament.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks37
+\pgfopts@list@add@b@toks=\toks38
+)
+Package: pgfornament 2024/08/14 v1.3 vector ornaments
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgfornament/pgflibraryvectorian.c
+ode.tex
+2020/04/06 1.1 pgflibraryvectorian.code.tex
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/sourcecodepro/sourcecodepro.sty
+Package: sourcecodepro 2018/01/13 v2.7 Adobe's Source Code Pro typeface
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+SourceSansPro-TLF on
+ input line 116.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/sourcesanspro/T1SourceSansPro-TLF
+.fd
+File: T1SourceSansPro-TLF.fd 2020/01/19 (autoinst) Font definitions for T1/Sour
+ceSansPro-TLF.
+)
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 116.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 116.
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count305
+\lst@gtempboxa=\box68
+\lst@token=\toks39
+\lst@length=\count306
+\lst@currlwidth=\dimen274
+\lst@column=\count307
+\lst@pos=\count308
+\lst@lostspace=\dimen275
+\lst@width=\dimen276
+\lst@newlines=\count309
+\lst@lineno=\count310
+\lst@maxwidth=\dimen277
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count311
+\lst@skipnumbers=\count312
+\lst@framebox=\box69
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
+))
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks40
+\verbatim@line=\toks41
+\verbatim@in@stream=\read4
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks42
+)
+\tcb@titlebox=\box70
+\tcb@upperbox=\box71
+\tcb@lowerbox=\box72
+\tcb@phantombox=\box73
+\c@tcbbreakpart=\count313
+\c@tcblayer=\count314
+\c@tcolorbox@number=\count315
+\l__tcobox_tmpa_box=\box74
+\l__tcobox_tmpa_dim=\dimen278
+\tcb@temp=\box75
+\tcb@temp=\box76
+\tcb@temp=\box77
+\tcb@temp=\box78
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count316
+\Gm@cntv=\count317
+\c@Gm@tempcnt=\count318
+\Gm@bindingoffset=\dimen279
+\Gm@wd@mp=\dimen280
+\Gm@odd@mp=\dimen281
+\Gm@even@mp=\dimen282
+\Gm@layoutwidth=\dimen283
+\Gm@layoutheight=\dimen284
+\Gm@layouthoffset=\dimen285
+\Gm@layoutvoffset=\dimen286
+\Gm@dimlist=\toks43
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip52
+\cftbeforetoctitleskip=\skip53
+\cftaftertoctitleskip=\skip54
+\cftbeforepartskip=\skip55
+\cftpartnumwidth=\skip56
+\cftpartindent=\skip57
+\cftbeforechapskip=\skip58
+\cftchapindent=\skip59
+\cftchapnumwidth=\skip60
+\cftbeforesecskip=\skip61
+\cftsecindent=\skip62
+\cftsecnumwidth=\skip63
+\cftbeforesubsecskip=\skip64
+\cftsubsecindent=\skip65
+\cftsubsecnumwidth=\skip66
+\cftbeforesubsubsecskip=\skip67
+\cftsubsubsecindent=\skip68
+\cftsubsubsecnumwidth=\skip69
+\cftbeforeparaskip=\skip70
+\cftparaindent=\skip71
+\cftparanumwidth=\skip72
+\cftbeforesubparaskip=\skip73
+\cftsubparaindent=\skip74
+\cftsubparanumwidth=\skip75
+\cftbeforeloftitleskip=\skip76
+\cftafterloftitleskip=\skip77
+\cftbeforefigskip=\skip78
+\cftfigindent=\skip79
+\cftfignumwidth=\skip80
+\c@lofdepth=\count319
+\c@lotdepth=\count320
+\cftbeforelottitleskip=\skip81
+\cftafterlottitleskip=\skip82
+\cftbeforetabskip=\skip83
+\cfttabindent=\skip84
+\cfttabnumwidth=\skip85
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box79
+\beforetitleunit=\skip86
+\aftertitleunit=\skip87
+\ttl@plus=\dimen287
+\ttl@minus=\dimen288
+\ttl@toksa=\toks44
+\titlewidth=\dimen289
+\titlewidthlast=\dimen290
+\titlewidthfirst=\dimen291
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip88
+\f@nch@offset@elh=\skip89
+\f@nch@offset@erh=\skip90
+\f@nch@offset@olh=\skip91
+\f@nch@offset@orh=\skip92
+\f@nch@offset@elf=\skip93
+\f@nch@offset@erf=\skip94
+\f@nch@offset@olf=\skip95
+\f@nch@offset@orf=\skip96
+\f@nch@height=\skip97
+\f@nch@footalignment=\skip98
+\f@nch@widthL=\skip99
+\f@nch@widthC=\skip100
+\f@nch@widthR=\skip101
+\@temptokenb=\toks45
+))
+(./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 28.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 2
+8.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/ly1/ly1ptm.fd
+File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
+)
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Info: Redefining \microtypecontext on input line 28.
+Package microtype Info: Applying patch `item' on input line 28.
+Package microtype Info: Applying patch `toc' on input line 28.
+Package microtype Info: Applying patch `eqnum' on input line 28.
+Package microtype Info: Applying patch `footnote' on input line 28.
+Package microtype Info: Applying patch `verbatim' on input line 28.
+LaTeX Info: Redefining \microtypesetup on input line 28.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2),
+(microtype)             factor: 1100.
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 10, shrink: 10, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 28.
+Package microtype Info: Tracking enabled.
+Package microtype Info: Using default tracking set `smallcaps'.
+Package microtype Info: Adjustment of interword spacing enabled.
+Package microtype Info: Using default spacing set `alltext-nott'.
+Package microtype Info: Adjustment of character kerning enabled.
+Package microtype Info: Using default kerning set `alltext'.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `SourceSansPro-TLF' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count321
+\scratchdimen=\dimen292
+\scratchbox=\box80
+\nofMPsegments=\count322
+\nofMParguments=\count323
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count324
+\MPscratchDim=\dimen293
+\MPnumerator=\count325
+\makeMPintoPDFobject=\count326
+\everyMPtoPDFconversion=\toks47
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count327
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(63.23624pt, 316.18126pt, 54.2025pt)
+* v-part:(T,H,B)=(54.2025pt, 542.025pt, 54.2025pt)
+* \paperwidth=433.62pt
+* \paperheight=650.43pt
+* \textwidth=316.18126pt
+* \textheight=542.025pt
+* \oddsidemargin=-9.03375pt
+* \evensidemargin=-18.06749pt
+* \topmargin=-49.94128pt
+* \headheight=15.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=98.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(./frontmatter/titlepage.tex
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 20.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 17.28pt on input line 20.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/sc' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 20.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/sc' will be
+(Font)              scaled to size 17.28pt on input line 20.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 24.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 24.88pt on input line 24.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/sc' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 24.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/sc' will be
+(Font)              scaled to size 24.88pt on input line 24.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 30.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 14.4pt on input line 30.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 53.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 6.0pt on input line 53.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/sc' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 98.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/sc' will be
+(Font)              scaled to size 14.4pt on input line 98.
+
+
+[1
+
+
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
+al/texlive/2025/texmf-dist/fonts/enc/dvips/sourcesanspro/a_4jropk.enc}{/usr/loc
+al/texlive/2025/texmf-dist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc}]
+
+[2
+
+]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.26999pt, 289.08002pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 505.89001pt, 72.26999pt)
+* \paperwidth=433.62pt
+* \paperheight=650.43pt
+* \textwidth=289.08002pt
+* \textheight=505.89001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-34.8738pt
+* \headheight=15.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=98.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+
+[1
+
+
+]) (./frontmatter/copyrightpage.tex
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 5.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 10.95pt on input line 5.
+LaTeX Font Info:    Trying to load font information for TS1+SourceSansPro-TLF o
+n input line 14.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/sourcesanspro/TS1SourceSansPro-TL
+F.fd
+File: TS1SourceSansPro-TLF.fd 2020/01/19 (autoinst) Font definitions for TS1/So
+urceSansPro-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `TS1/SourceSansPro-TLF/regular/n' on input line 14.
+LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 10.95pt on input line 14.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `SourceSansPro-TLF' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+<frontmatter/logo-black.png, id=41, 267.66667pt x 267.66667pt>
+File: frontmatter/logo-black.png Graphic file (type png)
+<use frontmatter/logo-black.png>
+Package pdftex.def Info: frontmatter/logo-black.png  used on input line 34.
+(pdftex.def)             Requested size: 22.135pt x 22.1326pt.
+) (./frontmatter/preface.tex
+
+[2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5ponh6.en
+c} <./frontmatter/logo-black.png>]
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/sc' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 4.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/sc' will be
+(Font)              scaled to size 12.0pt on input line 4.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 6.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 22.69649pt on input line 6.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 6.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 34.70412pt on input line 6.
+Package lettrine.sty Info: Targeted height = 22.69649pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 22.69646pt (I);
+(lettrine.sty)             reported on input line 6.
+
+Underfull \hbox (badness 1199) in paragraph at lines 13--14
+\T1/SourceSansPro-TLF/regular/n/12 (+10) 5000 of my de-vi-ces worldwide. Every 
+pro-ject taught me so-
+ []
+
+
+Underfull \hbox (badness 5908) in paragraph at lines 21--22
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) My first com-pany was born while I w
+as still at uni-ver-
+ []
+
+
+
+[3
+
+]
+
+[4]) (./frontmatter/tocpage.tex (./main.toc
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 2.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
+(Font)              scaled to size 14.4pt on input line 2.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 2.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
+(Font)              scaled to size 12.0pt on input line 2.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+
+
+[5
+
+
+]
+
+[6]
+
+[7])
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+
+
+[8]) (./content/chapter1.tex
+Cap\'{\i }tulo 1.
+Package lettrine.sty Info: Targeted height = 22.69649pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 22.69646pt (B);
+(lettrine.sty)             reported on input line 4.
+
+Underfull \vbox (badness 1509) has occurred while \output is active []
+
+
+
+[1
+
+
+
+]
+
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 40.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
+(Font)              scaled to size 12.0pt on input line 40.
+[2]
+LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `TS1/SourceSansPro-TLF/regular/n' on input line 40.
+LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 40.
+
+Underfull \hbox (badness 1048) in paragraph at lines 56--57
+[]\T1/SourceSansPro-TLF/bold/n/12 (+10) Why: \T1/SourceSansPro-TLF/regular/n/12
+ (+10) En-su-res no data loss du-ring network ou-ta-ges in
+ []
+
+
+
+[3]
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+[]\T1/SourceSansPro-TLF/bold/n/12 (+10) Storage In-ter-face: \T1/SourceSansPro-
+TLF/regular/n/12 (+10) Lo-cal vi-deo buf-fe-ring, au-to-ma-tic
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 125--126
+\T1/SourceSansPro-TLF/regular/n/12 (+10) Once in-ter-fa-ces are de-fi-ned, cre-
+ate a sys-tem block di-a-gram
+ []
+
+
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+[]\T1/SourceSansPro-TLF/bold/n/12 (+10) User fe-ed-back func-tion: \T1/SourceSa
+nsPro-TLF/regular/n/12 (+10) In-di-cate suc-ces-s-ful/-fai-led
+ []
+
+
+
+[6]
+Underfull \hbox (badness 1270) in paragraph at lines 156--157
+[]\T1/SourceSansPro-TLF/bold/n/12 (+10) Synchronization func-tion: \T1/SourceSa
+nsPro-TLF/regular/n/12 (+10) Up-date card ba-lan-ces and
+ []
+
+
+
+[7]
+
+[8]
+
+[9]
+
+[10]) (./content/chapter2.tex
+
+[11]
+Cap\'{\i }tulo 2.
+Package lettrine.sty Info: Targeted height = 22.69649pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 22.69646pt (T);
+(lettrine.sty)             reported on input line 4.
+
+
+[12
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+[]\T1/SourceSansPro-TLF/bold/n/12 (+10) RC522 RFID Mo-dule \T1/SourceSansPro-TL
+F/regular/n/12 (+10) - \TS1/SourceSansPro-TLF/regular/n/12 (+10) ¿\T1/SourceSan
+sPro-TLF/regular/n/12 (+10) 3 from Bo-tland
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+\T1/SourceSansPro-TLF/regular/n/12 (+10) (https://botland.store/rfid-modules-ta
+gs/6765-rfid-mf-rc522-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+[]\T1/SourceSansPro-TLF/bold/n/12 (+10) Library sup-port avai-la-ble? \T1/Sourc
+eSansPro-TLF/regular/n/12 (+10) Mul-ti-ple li-bra-ries
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+\T1/SourceSansPro-TLF/regular/n/12 (+10) exist, in-clu-ding my fork for CM4/CM5
+ ker-nels
+ []
+
+
+
+[13]
+
+[14]
+
+[15]
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+[]\T1/SourceSansPro-TLF/bold/n/12 (+10) Custom Ca-ble Ma-nu-fac-tu-ring: \T1/So
+urceSansPro-TLF/regular/n/12 (+10) LCSC
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+\T1/SourceSansPro-TLF/regular/n/12 (+10) (https://www.lcsc.com/customcables) pr
+o-vi-des pro-fes-si-o-
+ []
+
+
+
+[17]
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Adequate for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Excessive for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Requires
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) No (CPU-
+ []
+
+
+
+[19]) (./content/chapter4.tex
+
+[20]
+
+[21]
+Cap\'{\i }tulo 3.
+Package lettrine.sty Info: Targeted height = 22.69649pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 22.69646pt (Y);
+(lettrine.sty)             reported on input line 4.
+
+Underfull \hbox (badness 2269) in paragraph at lines 6--7
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) This is the tran-si-tion from TRL 3 
+(ex-pe-ri-men-tal proof of
+ []
+
+
+Underfull \hbox (badness 3199) in paragraph at lines 6--7
+\T1/SourceSansPro-TLF/regular/n/12 (+10) con-cept) to TRL 4 (te-ch-no-logy va-l
+i-da-ted in lab). The "spi-
+ []
+
+
+
+[22
+
+] (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+LaTeX Font Info:    Trying to load font information for T1+SourceCodePro-TLF on
+ input line 38.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/sourcecodepro/T1SourceCodePro-TLF
+.fd
+File: T1SourceCodePro-TLF.fd 2018/02/18 (autoinst) Font definitions for T1/Sour
+ceCodePro-TLF.
+)
+LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 38.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `SourceCodePro-TLF' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \vbox (badness 3942) has occurred while \output is active []
+
+
+
+[23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[24{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/sourcecodepro/a_lutrty.e
+nc}]
+Underfull \hbox (badness 1242) in paragraph at lines 72--73
+[]\T1/SourceSansPro-TLF/bold/n/12 (+10) Does it work at all? \T1/SourceSansPro-
+TLF/regular/n/12 (+10) Can you com-plete the full cy-cle
+ []
+
+
+
+[25]
+Underfull \hbox (badness 2005) in paragraph at lines 90--91
+[]\T1/SourceSansPro-TLF/bold/n/12 (+10) Network in-ter-rup-tion: \T1/SourceSans
+Pro-TLF/regular/n/12 (+10) How does the sys-tem behave
+ []
+
+LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 113.
+
+
+[26]
+Overfull \hbox (43.81859pt too wide) in paragraph at lines 124--124
+[]\T1/SourceCodePro-TLF/m/n/12 LED    -> GPIO 24 (with current limiting resisto
+r)[] 
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 129--130
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) For fas-ter pro-toty-ping, use the c
+om-plete CM4 RFID bo-ard
+ []
+
+
+
+[27]
+
+[28]
+
+[29]
+
+[30]) (./content/chapter5.tex
+
+[31]
+Cap\'{\i }tulo 4.
+Package lettrine.sty Info: Targeted height = 22.69649pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 22.69646pt (L);
+(lettrine.sty)             reported on input line 5.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 5.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 8.0pt on input line 5.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 5.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 10.0pt on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 5.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 5.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 7.0pt on input line 5.
+) (./content/chapter6.tex
+
+[32
+
+]
+Cap\'{\i }tulo 5.
+Package lettrine.sty Info: Targeted height = 22.69649pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 22.69646pt (W);
+(lettrine.sty)             reported on input line 4.
+
+Underfull \hbox (badness 2096) in paragraph at lines 12--13
+\T1/SourceSansPro-TLF/regular/n/12 (+10) need. Whether it's fi-xing a cri-ti-ca
+l bug, ad-ding a customer-
+ []
+
+
+
+[33
+
+]
+
+[34]
+Underfull \hbox (badness 1715) in paragraph at lines 28--29
+[]\T1/SourceSansPro-TLF/bold/n/12 (+10) Consider Ba-lena Cloud: \T1/SourceSansP
+ro-TLF/regular/n/12 (+10) Pro-vi-des enterprise-grade re-
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 40--41
+[]\T1/SourceSansPro-TLF/bold/n/12 (+10) Customer-triggered ac-cess: \T1/SourceS
+ansPro-TLF/regular/n/12 (+10) Im-ple-ment a me-cha-nism
+ []
+
+
+Underfull \vbox (badness 1320) has occurred while \output is active []
+
+
+
+[35]
+
+[36]
+
+[37]
+Underfull \hbox (badness 1803) in paragraph at lines 126--127
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Your de-vice should work im-me-di-a-
+tely upon power-up, re-
+ []
+
+
+
+[38]
+
+[39] (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+Underfull \vbox (badness 1521) has occurred while \output is active []
+
+
+
+[40]
+
+[41]
+
+[42]) (./content/chapter7.tex
+
+[43]
+Cap\'{\i }tulo 6.
+Package lettrine.sty Info: Targeted height = 22.69649pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 22.69646pt (L);
+(lettrine.sty)             reported on input line 5.
+) (./content/chapter8.tex
+
+[44
+
+]
+Cap\'{\i }tulo 7.
+Package lettrine.sty Info: Targeted height = 22.69649pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 22.69646pt (L);
+(lettrine.sty)             reported on input line 5.
+) (./content/chapter9.tex
+
+[45
+
+]
+Cap\'{\i }tulo 8.
+Package lettrine.sty Info: Targeted height = 22.69649pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 22.69646pt (L);
+(lettrine.sty)             reported on input line 5.
+) (./content/chapter10.tex
+
+[46
+
+]
+Cap\'{\i }tulo 9.
+Package lettrine.sty Info: Targeted height = 22.69649pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 22.69646pt (L);
+(lettrine.sty)             reported on input line 5.
+) (./content/chapter11.tex
+
+[47
+
+]
+Cap\'{\i }tulo 10.
+Package lettrine.sty Info: Targeted height = 22.69649pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 22.69646pt (L);
+(lettrine.sty)             reported on input line 5.
+) (./content/chapter12.tex
+
+[48
+
+]
+Cap\'{\i }tulo 11.
+Package lettrine.sty Info: Targeted height = 22.69649pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 22.69646pt (L);
+(lettrine.sty)             reported on input line 5.
+) (./content/chapter13.tex
+
+[49
+
+]
+Cap\'{\i }tulo 12.
+Package lettrine.sty Info: Targeted height = 22.69649pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 22.69646pt (S);
+(lettrine.sty)             reported on input line 4.
+
+Underfull \vbox (badness 1117) has occurred while \output is active []
+
+
+
+[50
+
+]
+
+[51]
+LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/m/it' will be
+(Font)              scaled to size 10.95pt on input line 76.
+LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 78.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[52]
+Underfull \hbox (badness 3009) in paragraph at lines 104--105
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Remote up-date ca-pa-bi-lity is es-s
+en-tial but dan-ge-rous.
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[53]
+
+[54]
+Underfull \hbox (badness 3612) in paragraph at lines 153--154
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Competitor pro-ducts of-fe-ring 50% 
+bet-ter pri-ce/-per-for-
+ []
+
+
+
+[55]) (./content/appendix1.tex
+
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 14--16
+[]\T1/SourceSansPro-TLF/bold/n/12 (+10) Mouser Elec-tro-nics \T1/SourceSansPro-
+TLF/regular/n/12 (+10) (https://www.mouser.com) Si-mi-lar
+ []
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 14--16
+\T1/SourceSansPro-TLF/regular/n/12 (+10) to Digi-Key with sligh-tly dif-fe-rent
+ in-ven-tory. Good for cross-
+ []
+
+
+Underfull \vbox (badness 7415) has occurred while \output is active []
+
+
+
+[57
+
+]
+Underfull \hbox (badness 3250) in paragraph at lines 33--35
+\T1/SourceSansPro-TLF/regular/n/12 (+10) Outs-tan-ding cus-tom ca-ble ma-nu-fac
+-tu-ring. Clean do-cu-men-
+ []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 33--35
+\T1/SourceSansPro-TLF/regular/n/12 (+10) ta-tion, re-a-so-na-ble pri-cing, and 
+re-li-a-ble qua-lity. Es-sen-tial for
+ []
+
+
+Underfull \hbox (badness 7576) in paragraph at lines 41--43
+[]\T1/SourceSansPro-TLF/bold/n/12 (+10) Cubic Inch \T1/SourceSansPro-TLF/regula
+r/n/12 (+10) (https://cubicinch.pl/en/home/) Le-a-ding MJF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+\T1/SourceSansPro-TLF/bold/n/12 (+10) CM4/CM5 Pro-duc-tion Base Bo-ard
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+\T1/SourceSansPro-TLF/regular/n/12 (+10) (https://shop.razniewski.eu/p/cm4pb) C
+us-tom base bo-ard
+ []
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 49--51
+\T1/SourceSansPro-TLF/regular/n/12 (+10) de-sig-ned for pro-duc-tion use with i
+n-te-gra-ted RFID, RTC, and
+ []
+
+
+
+[58]
+Overfull \hbox (12.20932pt too wide) in paragraph at lines 52--54
+[]\T1/SourceSansPro-TLF/bold/n/12 (-10) CM4/CM5 Pro-gram-mer \T1/SourceSansPro-
+TLF/regular/n/12 (-10) (https://shop.razniewski.eu/p/cm4prog)
+ []
+
+
+Underfull \hbox (badness 7468) in paragraph at lines 52--54
+\T1/SourceSansPro-TLF/regular/n/12 (+10) li-a-ble flashing and re-co-very of CM
+4/CM5 mo-du-les du-ring
+ []
+
+
+
+[59]
+Underfull \vbox (badness 4595) has occurred while \output is active []
+
+
+
+[60])
+
+[61] (./frontmatter/backpage.tex
+
+[62
+
+
+]
+Underfull \hbox (badness 4673) in paragraph at lines 26--27
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) This prac-ti-cal guide ta-kes you fr
+om pro-totype
+ []
+
+
+Underfull \hbox (badness 2452) in paragraph at lines 26--27
+\T1/SourceSansPro-TLF/regular/n/12 (+10) to market-ready pro-duct. Ba-sed on re
+al ex-pe-ri-
+ []
+
+
+Underfull \hbox (badness 7649) in paragraph at lines 34--35
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Build re-li-a-ble pro-toty-pes and p
+ro-duc-tion
+ []
+
+)
+
+[63] (./main.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 23942 strings out of 473190
+ 489409 string characters out of 5715800
+ 1233442 words of memory out of 5000000
+ 46401 multiletter control sequences out of 15000+600000
+ 806116 words of font info for 289 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 99i,12n,108p,1047b,1527s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/adobe/sourcecodepro/SourceCod
+ePro-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/adobe/sourcecodep
+ro/SourceCodePro-It.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/adobe/s
+ourcecodepro/SourceCodePro-Regular.pfb></usr/local/texlive/2025/texmf-dist/font
+s/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb></usr/local/texlive/2025/tex
+mf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-It.pfb></usr/local/texliv
+e/2025/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb>
+Output written on main.pdf (73 pages, 470802 bytes).
+PDF statistics:
+ 312 PDF objects out of 1000 (max. 8388607)
+ 202 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 100466 words of extra memory for PDF output out of 106986 (max. 10000000)
+

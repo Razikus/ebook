@@ -1,0 +1,264 @@
+% Chapter VI
+\chapter{Key checklist for production code}
+
+\lettrine{W}{riting code for production} devices is fundamentally different from hobbyist projects or internal tools. When your code ships to customers who expect commercial-grade reliability, every design decision becomes critical. A single oversight can result in thousands of field service calls or, worse, a completely failed product launch.
+
+After shipping over 5,000 devices and dealing with the consequences of poor production code decisions, I've learned these lessons the hard way. This chapter distills the most critical considerations for production-ready code.
+
+\section{Remote Update Capability}
+
+\textbf{Always implement remote update functionality from day one.}
+
+You will need to update your devices. Not might need—will need. Whether it's fixing a critical bug, adding a customer-requested feature, or simply changing the font size in the UI, the ability to update deployed devices remotely is non-negotiable.
+
+\begin{tcolorbox}[colback=red!10,colframe=red!75!black,title=Real Crisis: Time Calculation Bug]
+I discovered a critical bug in my time attendance recorder that incorrectly calculated overtime hours in specific edge cases—when employees clocked in exactly at midnight during daylight saving time transitions. The bug affected payroll calculations for dozens of companies. Without remote update capability, I would have had to physically visit hundreds of deployed devices or face potential lawsuits and complete reputation destruction. The remote update saved my business.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!10,colframe=blue!75!black,title=Minor Issues Add Up]
+Even seemingly trivial updates matter. A client once threatened to cancel a 500-unit order because they couldn't read the status display—the font was too small for their environment. Without remote update capability, I would have faced the choice between losing the client or manually visiting 50+ already-deployed devices to flash new firmware.
+\end{tcolorbox}
+
+\textbf{Implementation considerations:}
+\begin{itemize}
+\item Use cryptographically signed updates to prevent tampering (e.g., using GPG signatures, x.509 certificates. Could be even git pull based)
+\item Implement rollback mechanisms for failed updates (e.g., using versioned firmware, A/B OTA updates)
+\item Design your update system before writing application code
+\item Test the update process extensively—it's harder to fix than the original code
+\item \textbf{Consider Balena Cloud:} Provides enterprise-grade remote update capability out of the box
+\end{itemize}
+
+\section{SSH Access Strategy}
+
+\textbf{Plan your support access carefully, considering both security and customer constraints.}
+
+SSH access for support is essential, but many corporate environments block SSH traffic or restrict open ports. You need a support strategy that works within your customers' security policies.
+
+\textbf{Options to consider:}
+\begin{enumerate}
+\item \textbf{Custom SSH port:} Use non-standard ports (e.g., 2222, 8022) to avoid basic port blocking
+\item \textbf{Customer-triggered access:} Implement a mechanism where customers can temporarily enable SSH when support is needed
+\item \textbf{Reverse SSH tunnels:} Device initiates connection to your support server
+\item \textbf{VPN solutions:} Tools like Balena or custom VPN implementations
+\item \textbf{Balena Cloud SSH:} Provides secure SSH access through their cloud infrastructure, bypassing firewall restrictions
+\end{enumerate}
+
+\begin{tcolorbox}[colback=yellow!10,colframe=orange!75!black,title=Real-World Constraint]
+Enterprise customers often have strict firewall policies. Plan your support access strategy during the design phase, not when you're desperately trying to troubleshoot a failing device in production.
+\end{tcolorbox}
+
+\section{Operating System Selection}
+
+\textbf{Choose your OS foundation carefully—this decision affects everything else.}
+
+For Raspberry Pi devices, you have several paths:
+
+\subsection{Custom Raspbian Build}
+
+Build your own minimal OS using pi-gen: \url{https://github.com/RPi-Distro/pi-gen}
+
+\textbf{Advantages:}
+\begin{itemize}
+\item Complete control over included packages
+\item Smaller attack surface
+\item Faster boot times
+\item Reproducible builds
+\end{itemize}
+
+\textbf{Disadvantages:}
+\begin{itemize}
+\item Significant initial setup time
+\item You're responsible for security updates
+\item Limited ecosystem support
+\end{itemize}
+
+\subsection{Balena OS Alternative}
+
+Balena provides a complete IoT device management platform with both paid and open-source options.
+
+\textbf{Balena Cloud (Paid):}
+\begin{itemize}
+\item Out-of-the-box device management
+\item Automatic updates and monitoring
+\item Professional support
+\item Docker-based application deployment
+\item \textbf{Built-in remote update capability:} Push updates to devices worldwide with a single command
+\end{itemize}
+
+\textbf{OpenBalena (Open Source):}
+\begin{itemize}
+\item Self-hosted device management
+\item No ongoing costs
+\item Full control over infrastructure
+\end{itemize}
+
+\begin{tcolorbox}[colback=red!10,colframe=red!75!black,title=Balena Gotchas]
+\textbf{Certification Issues:} Balena certificates can expire, potentially breaking device connectivity.
+
+\textbf{Always-On VPN:} Even when disabled, the VPN infrastructure remains present, which some security-conscious customers reject.
+
+\textbf{Driver Limitations:} Custom hardware drivers can be challenging to integrate into Balena's Docker ecosystem.
+
+\textbf{Docker Overhead:} Additional resource usage may impact performance on resource-constrained devices.
+\end{tcolorbox}
+
+Despite these limitations, Balena works exceptionally well for most use cases and can significantly reduce development time.
+
+\section{Multiple Connectivity Options}
+
+\textbf{Always provide at least two ways to connect to your device.}
+
+Network connectivity is the most common point of failure in deployed devices. Customers will find themselves in situations where their primary connection method fails.
+
+\textbf{Proven combinations:}
+\begin{itemize}
+\item \textbf{Ethernet + WiFi:} Most reliable for stationary installations
+\item \textbf{WiFi + Bluetooth:} Useful for mobile or temporary deployments
+\item \textbf{Ethernet + Bluetooth:} Good for environments with WiFi restrictions
+\end{itemize}
+
+In my time attendance device "Skryba," I implemented WiFi + Bluetooth networking. When customers had WiFi connectivity issues, they could still configure and operate the device via Bluetooth using a mobile app.
+
+\section{Zero-Configuration User Experience}
+
+\textbf{Customers are not developers—design for plug-and-play operation.}
+
+Your device should work immediately upon power-up, requiring minimal configuration. Implement zero-configuration networking protocols and automatic device discovery.
+
+\textbf{Key principles:}
+\begin{itemize}
+\item Default to automatic IP configuration (DHCP)
+\item Broadcast device presence (mDNS/Bonjour)
+\item Provide web-based configuration interface
+\item Use QR codes for easy mobile device pairing
+\item Implement status LEDs for non-technical troubleshooting
+\end{itemize}
+
+\section{Power Supply Considerations}
+
+\textbf{Assume inconsistent power quality and implement atomic operations.}
+
+Customer power supplies are often unreliable. I once had a client whose device constantly shut down unexpectedly due to insufficient power supply capacity. Your code must handle sudden power loss gracefully.
+
+\textbf{Critical practices:}
+\begin{itemize}
+\item Use atomic file operations for critical data
+\item Implement transaction logs for multi-step operations
+\item Design state machines that can recover from any interruption
+\item Consider using a supercapacitor for graceful shutdown detection
+\end{itemize}
+
+\section{Hardware Boundary Enforcement}
+
+\textbf{Explicitly limit supported hardware configurations.}
+
+If you support HDMI output, specify exactly which resolutions you support. In my experience, stating \"1920×1080 only\" prevents countless support issues with customers using unusual display configurations.
+
+\textbf{Common boundaries to enforce:}
+\begin{itemize}
+\item Display resolutions and refresh rates
+\item Network interface speeds
+\item Storage device types and sizes
+\item USB device classes
+\item Camera resolutions and frame rates
+\end{itemize}
+
+\section{Automatic Recovery Mechanisms}
+
+\textbf{Implement comprehensive auto-recovery for all failure modes.}
+
+Customers expect devices to handle problems automatically without manual intervention.
+
+\textbf{Recovery strategies:}
+\begin{itemize}
+\item \textbf{Application crash:} Automatic restart with exponential backoff
+\item \textbf{Network disconnection:} Automatic reconnection with fallback methods
+\item \textbf{Memory exhaustion:} Automatic reboot when available memory drops below threshold
+\item \textbf{Disk full:} Automatic log rotation and cleanup of temporary files
+\end{itemize}
+
+\begin{tcolorbox}[colback=gray!5,colframe=gray!50,title=Watchdog Implementation]
+\begin{lstlisting}[language=bash,basicstyle=\small\ttfamily]
+#!/bin/bash
+# Simple application watchdog
+while true; do
+    if ! pgrep -f "my_application" > /dev/null; then
+        echo "Application not running, restarting..."
+        /opt/myapp/start_application.sh
+        sleep 30
+    fi
+    sleep 10
+done
+\end{lstlisting}
+\end{tcolorbox}
+
+\section{Credential Security}
+
+\textbf{Never hardcode credentials that could compromise the entire application.}
+
+This includes API keys, database passwords, encryption keys, and any authentication tokens. Hardcoded credentials create a single point of failure that affects all deployed devices.
+
+\textbf{Secure alternatives:}
+\begin{itemize}
+\item Device-specific certificates generated during manufacturing
+\item Runtime credential provisioning through secure channels
+\item Hardware security modules (HSM) for key storage
+\item Encrypted credential storage with device-unique keys
+\end{itemize}
+
+\section{Local Security}
+
+\textbf{Secure all endpoints, even on local networks.}
+
+Never expose password-unprotected endpoints, even on supposedly "trusted" local networks. Local networks are often less secure than public internet connections.
+
+\textbf{Minimum security measures:}
+\begin{itemize}
+\item Authentication required for all administrative functions
+\item HTTPS for all web interfaces, even local ones
+\item Input validation on all API endpoints
+\item Rate limiting to prevent brute-force attacks
+\end{itemize}
+
+\section{The Embedded Golden Rule}
+
+\textbf{Simpler is always better in embedded systems.}
+
+Every additional feature, dependency, or complexity point increases the probability of failure. When in doubt, choose the simpler solution.
+
+\textbf{Complexity indicators to avoid:}
+\begin{itemize}
+\item Multiple programming languages in one project
+\item Complex dependency chains
+\item Custom protocols when standard ones exist
+\item "Smart" features that aren't explicitly requested
+\item Premature optimization
+\end{itemize}
+
+This principle has saved me more time and customer relationships than any other rule. When facing a choice between an elegant complex solution and a simple working solution, always choose simple.
+
+\section{Two paths}
+Always have at least 2 paths - development and production.
+
+Push into development first.
+
+\section{Pre-Deployment Checklist}
+
+Before shipping any code update, verify on development path:
+
+\begin{enumerate}
+\item Remote update mechanism tested and working
+\item Support access method confirmed with customer IT
+\item All hardcoded values removed or configurable
+\item Auto-recovery mechanisms tested with actual failures
+\item Security endpoints password-protected
+\item Zero-configuration setup tested by non-technical users (ask your relative)
+\item Power interruption recovery tested
+\item Multiple connectivity methods verified
+\end{enumerate}
+
+Following these principles won't eliminate all production issues, but it will dramatically reduce the frequency and severity of field problems. More importantly, it will give you the tools to fix issues remotely when they do occur.
+
+Remember: production code isn't just about making features work—it's about making them work reliably in environments you can't control, for users who aren't experts, with hardware that will inevitably fail in unexpected ways.
+
+And believe me. It's a mess.
