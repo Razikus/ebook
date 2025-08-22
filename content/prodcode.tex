@@ -237,6 +237,20 @@ Every additional feature, dependency, or complexity point increases the probabil
 
 This principle has saved me more time and customer relationships than any other rule. When facing a choice between an elegant complex solution and a simple working solution, always choose simple.
 
+
+\section{Backup All Dependencies}
+
+\textbf{Dependencies disappear without warning. Backup everything (detailed in software chapter).}
+
+\begin{itemize}
+\item Full system images of working configurations
+\item Complete package caches (APT, pip, npm)
+\item All external repositories and libraries
+\item Working Docker containers as archived files
+\end{itemize}
+
+\textbf{Test regularly:} Can you rebuild without internet access?
+
 \section{Two paths}
 Always have at least 2 paths - development and production.
 

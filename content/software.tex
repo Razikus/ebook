@@ -1,0 +1,398 @@
+% Chapter V
+\chapter{Write a software}
+
+\lettrine{Y}{our POC works} and hardware is validated. Now comes the transition from proof-of-concept scripts to production software that customers can rely on. This chapter covers the systematic approach to building robust embedded applications.
+
+Production software differs fundamentally from development scripts. It must handle edge cases, recover from failures, and operate unattended for months. Every decision impacts long-term reliability and maintainability.
+
+\section{Network Management}
+
+\subsection{NetworkManager and D-Bus Integration}
+
+Use NetworkManager via D-Bus for all network operations. This provides system-level integration and handles complex scenarios like WiFi roaming and connection management automatically.
+
+\textbf{Avoid:} Direct manipulation of network interfaces or configuration files
+\textbf{Use:} NetworkManager D-Bus API for programmatic control
+
+\begin{tcolorbox}[colback=gray!5,colframe=gray!50,title=Hotspot Creation Example]
+\begin{lstlisting}[language=Python,basicstyle=\footnotesize\ttfamily]
+#!/usr/bin/env python
+# NetworkManager hotspot creation via D-Bus
+import dbus, sys, time
+
+our_uuid = "2b0d0f1d-b79d-43af-bde"
+s_ip4 = dbus.Dictionary({"method": "shared"})
+s_ip6 = dbus.Dictionary({"method": "ignore"})
+con = dbus.Dictionary({
+    "connection": s_con,
+    "802-11-wireless": s_wifi,
+    "802-11-wireless-security": s_wsec,
+    "ipv4": s_ip4,
+    "ipv6": s_ip6,
+})
+connection_path = None
+for path in settings.ListConnections():
+    proxy = bus.get_object("org.freedesktop.NetworkManager", path)
+    settings_connection = dbus.Interface(
+        proxy, "org.freedesktop.NetworkManager.Settings.Connection"
+    )
+    config = settings_connection.GetSettings()
+    if config["connection"]["uuid"] == our_uuid:
+        connection_path = path
+        break
+
+\end{lstlisting}
+\end{tcolorbox}
+
+\subsection{Service Management with systemd}
+
+Use systemd for service management rather than Docker unless containerization provides specific benefits. For embedded systems, systemd's overhead is minimal and integration is superior.
+
+\textbf{Systemd advantages for embedded systems:}
+\begin{itemize}
+\item Native process supervision and restart
+\item Dependency management between services
+\item Resource limiting and monitoring
+\item Integration with system logging
+\item No container runtime overhead
+\end{itemize}
+
+\subsection{Bluetooth Network Configuration}
+
+For Bluetooth network functionality, create NAP (Network Access Point) using bt-network:
+
+\begin{tcolorbox}[colback=gray!5,colframe=gray!50,title=Bluetooth NAP Setup]
+\begin{lstlisting}[language=bash,basicstyle=\small\ttfamily]
+# Create Bluetooth network access point
+bt-network NAP pan0
+
+# Configure IP for pan0 interface
+ip addr add 192.168.100.1/24 dev pan0
+ip link set pan0 up
+
+# Enable IP forwarding for internet sharing
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -A FORWARD -i pan0 -j ACCEPT
+iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+\end{lstlisting}
+\end{tcolorbox}
+
+\section{System Reliability and Auto-Healing}
+
+\subsection{Comprehensive Auto-Healing Strategy}
+
+Production devices must recover automatically from any recoverable failure. Implement multiple layers of monitoring and recovery.
+
+The fundamental principle is simple: it's better for a service to restart than to crash and stay down. Your customers expect devices to work continuously without manual intervention. Every failure that requires human intervention scales poorly and damages your reputation.
+
+A device that restarts gracefully when problems occur appears more reliable to customers than one that crashes and requires physical intervention. Plan for failure from the beginning.
+
+\textbf{Application-level monitoring:}
+\begin{tcolorbox}[colback=gray!5,colframe=gray!50,title=Simple Watchdog Script]
+\begin{lstlisting}[language=bash,basicstyle=\small\ttfamily]
+#!/bin/bash
+check_service() {
+    if ! systemctl is-active --quiet $1; then
+        systemctl restart $1
+        sleep 5
+        systemctl is-active --quiet $1 || /sbin/reboot
+    fi
+}
+while true; do
+    check_service "time-attendance"
+    check_service "hotspot-manager"
+    sleep 30
+done
+\end{lstlisting}
+\end{tcolorbox}
+
+\subsection{Security Hardening}
+
+Close unnecessary services and ports. Embedded devices should expose minimal attack surface.
+
+\textbf{Essential hardening steps:}
+\begin{itemize}
+\item Disable unused systemd services
+\item Configure iptables to block unused ports
+\item Remove or disable SSH after initial setup
+\item Use fail2ban for brute force protection
+\item Regular security updates via controlled update mechanism
+\end{itemize}
+
+\section{Storage and Logging Strategy}
+
+\subsection{Minimal Disk Logging}
+
+\textbf{Critical principle: Minimize disk writes to extend storage life.}
+
+Unlike server applications, embedded systems must minimize storage wear. Use in-memory storage with periodic persistence.
+
+\textbf{Logging strategy:}
+\begin{itemize}
+\item Use systemd journal with volatile storage (RAM-based)
+\item Log only critical events to persistent storage
+\item Implement log rotation with aggressive size limits
+\item Use ring buffers for debug information
+\end{itemize}
+
+\textbf{Journal configuration for embedded systems:}
+\begin{tcolorbox}[colback=gray!5,colframe=gray!50,title=/etc/systemd/journald.conf]
+\begin{lstlisting}[language=bash,basicstyle=\small\ttfamily]
+[Journal]
+Storage=none
+RuntimeMaxUse=16M
+RuntimeMaxFiles=5
+MaxLevelStore=warning
+MaxLevelSyslog=err
+\end{lstlisting}
+\end{tcolorbox}
+
+\subsection{Efficient Data Storage with Redis}
+
+For application data storage, Redis provides excellent performance with configurable persistence.
+
+\textbf{Redis configuration for embedded systems:}
+\begin{tcolorbox}[colback=gray!5,colframe=gray!50,title=Redis Persistence Configuration]
+\begin{lstlisting}[language=bash,basicstyle=\small\ttfamily]
+# redis.conf - optimized for embedded systems
+
+# Save every 100 keys changed OR every 60 seconds
+save 60 1
+save 300 100
+save 900 1000
+
+# Use less memory
+maxmemory 64mb
+maxmemory-policy allkeys-lru
+
+# Disable AOF for minimal writes
+appendonly no
+
+# Optimize for low-power systems
+hz 10
+\end{lstlisting}
+\end{tcolorbox}
+
+\textbf{Application integration example:}
+\begin{tcolorbox}[colback=gray!5,colframe=gray!50,title=Redis Usage Pattern]
+\begin{lstlisting}[language=Python,basicstyle=\small\ttfamily]
+import redis
+import json
+import time
+
+class AttendanceStorage:
+    def __init__(self):
+        self.redis = redis.Redis(host='localhost', port=6379, db=0)
+        
+    def log_attendance(self, user_id, timestamp=None):
+        if timestamp is None:
+            timestamp = int(time.time())
+            
+        # Store in Redis
+        key = f"attendance:{timestamp}"
+        data = {"user_id": user_id, "timestamp": timestamp}
+        self.redis.setex(key, 86400, json.dumps(data))  # 24h TTL
+        
+        # Add to daily summary
+        date_key = f"daily:{time.strftime('%Y-%m-%d', time.localtime(timestamp))}"
+        self.redis.sadd(date_key, user_id)
+        self.redis.expire(date_key, 86400 * 30)  # 30 day retention
+        
+    def get_daily_attendance(self, date):
+        date_key = f"daily:{date}"
+        return list(self.redis.smembers(date_key))
+\end{lstlisting}
+\end{tcolorbox}
+
+\section{User Interface Development}
+
+\subsection{Raylib for Embedded Graphics}
+
+For applications requiring local display, Raylib provides efficient graphics with minimal dependencies.
+
+\textbf{Raylib advantages for embedded systems:}
+\begin{itemize}
+\item Small footprint and minimal dependencies
+\item Hardware-accelerated graphics where available
+\item Cross-platform compatibility
+\item Simple API for common UI elements
+\item Good performance on low-power hardware
+\end{itemize}
+
+\textbf{Basic Raylib application structure:}
+\begin{tcolorbox}[colback=gray!5,colframe=gray!50,title=Simple Attendance Display]
+\begin{lstlisting}[language=C,basicstyle=\footnotesize\ttfamily]
+#include "raylib.h"
+#include <stdio.h>
+int main(void) {
+    const int screenWidth = 800;
+    const int screenHeight = 480;
+    InitWindow(screenWidth, screenHeight, "Attendance System");
+    SetTargetFPS(30);
+    char statusText[256] = "Ready for card...";
+    int cardCount = 0;
+    while (!WindowShouldClose()) {
+        if (IsKeyPressed(KEY_SPACE)) {  // Simulate card scan
+            cardCount++;
+            sprintf(statusText, "Card scanned! Total: %d", cardCount);
+        }
+        BeginDrawing();
+        ClearBackground(DARKBLUE);
+        DrawText("Time Attendance System", 150, 50, 40, WHITE);
+        DrawText(statusText, 200, 200, 20, YELLOW);
+        DrawText("Press SPACE to simulate card scan", 200, 350, 16, GRAY);
+        EndDrawing();
+    }
+    CloseWindow();
+    return 0;
+}
+\end{lstlisting}
+\end{tcolorbox}
+
+\section{Remote Update Capability}
+
+\subsection{Update System Requirements}
+
+Every production device must support remote updates. Design this capability from the beginning, not as an afterthought.
+
+\textbf{Update system components:}
+\begin{itemize}
+\item Cryptographically signed update packages
+\item Rollback capability for failed updates
+\item Health check monitoring post-update
+\item Bandwidth-efficient delta updates
+\item Scheduled update windows to minimize disruption
+\end{itemize}
+
+\section{Dependency Management and Backup Strategy}
+
+\subsection{Critical Reality: Everything Becomes Obsolete}
+
+External dependencies disappear, break, or become incompatible. You must backup everything—not just Python packages, but the entire system.
+
+\textbf{What breaks without warning:}
+\begin{itemize}
+\item APT packages removed from repositories
+\item Docker base images deleted or updated incompatibly
+\item GitHub repositories disappearing
+\item Kernel driver compatibility broken by updates
+\end{itemize}
+
+\subsection{Full System Backup Approach}
+
+\textbf{Complete system image:}
+Create full disk images of working systems:
+\begin{itemize}
+\item \texttt{dd if=/dev/mmcblk0 of=working-system-v1.0.img}
+\item Store multiple dated snapshots
+\item Include bootloader and partition table
+\item Test restoration on clean hardware
+\end{itemize}
+
+\textbf{Package cache backup:}
+\begin{tcolorbox}[colback=gray!5,colframe=gray!50,title=APT Package Backup]
+\begin{lstlisting}[language=bash,basicstyle=\small\ttfamily]
+# Backup all downloaded packages
+cp -r /var/cache/apt/archives/ /backup/apt-cache/
+
+# Backup package lists
+dpkg --get-selections > /backup/packages.list
+
+# Backup sources.list
+cp /etc/apt/sources.list /backup/
+\end{lstlisting}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=red!10,colframe=red!75!black,title=Docker Reality Check]
+Docker images frequently become obsolete. Base images get updated, breaking your builds. Always backup working containers as .tar files and test restoration regularly. Don't trust Docker Hub to maintain old versions.
+\end{tcolorbox}
+
+\textbf{Offline rebuild capability:}
+Verify you can rebuild everything without internet:
+\begin{itemize}
+\item Test package installation from local cache
+\item Verify all dependencies are archived
+\item Document exact build procedures
+\item Keep working system images as fallback
+\end{itemize}
+
+\section{Support and Diagnostics}
+
+\subsection{Built-in Diagnostic Capabilities}
+
+Production software must include comprehensive diagnostic tools for remote troubleshooting.
+
+\textbf{Essential diagnostic information:}
+\begin{itemize}
+\item System health metrics (CPU, memory, temperature)
+\item Network connectivity status and performance
+\item Storage usage and health indicators
+\item Application-specific status (RFID reader, database)
+\item Recent error logs and event history
+\end{itemize}
+
+\section{Additional Service Opportunities}
+
+\subsection{SSL Proxy and Remote Access}
+
+Once your system has internet connectivity and exposes web services, you can immediately offer additional value-added services.
+
+\textbf{SSL Proxy Service (Upsell Opportunity):}
+Your devices expose local HTTP interfaces for configuration and monitoring. Many customers need secure remote access to these interfaces. Offer SSL proxy service as an additional product.
+
+\textbf{Service implementation options:}
+\begin{itemize}
+\item \textbf{Balena integration:} Built-in secure tunneling with device management
+\item \textbf{Custom proxy service:} Deploy your own reverse proxy infrastructure
+\item \textbf{Third-party solutions:} ngrok, localtunnel, or similar services
+\end{itemize}
+
+\textbf{Business model benefits:}
+\begin{itemize}
+\item Monthly recurring revenue from proxy service
+\item Increased device stickiness through value-added services
+\item Customer support becomes easier with remote access capability
+\item Upselling opportunity during initial device configuration
+\end{itemize}
+
+\subsection{Additional Upsell Services}
+
+\textbf{Remote monitoring and analytics:}
+\begin{itemize}
+\item Device health monitoring with alerting
+\item Usage analytics and reporting dashboards  
+\item Predictive maintenance notifications
+\item Performance optimization recommendations
+\end{itemize}
+
+\textbf{Enhanced support services:}
+\begin{itemize}
+\item Remote diagnostics and troubleshooting
+\item Automatic software updates with rollback capability
+\item 24/7 monitoring with incident response
+\item Priority technical support queue
+\end{itemize}
+
+These services transform one-time hardware sales into ongoing customer relationships with predictable recurring revenue.
+
+\textbf{Key differences from POC to production software:}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|p{3cm}|p{3cm}|}
+\hline
+\textbf{Aspect} & \textbf{POC} & \textbf{Production} \\
+\hline
+Error Handling & Print and exit & Graceful recovery \\
+Logging & Debug to console & Structured, minimal \\
+Configuration & Hardcoded values & External config files \\
+Updates & Manual reinstall & Automated remote updates \\
+Monitoring & Manual observation & Automated health checks \\
+Network & Simple WiFi & Fallback mechanisms \\
+Storage & SQLite files & Redis with persistence \\
+\hline
+\end{tabular}
+\caption{POC vs Production software comparison}
+\end{table}
+
+Production software requires systematic approach to reliability, maintainability, and supportability. Every component must handle failures gracefully and provide visibility into system health. The investment in robust software architecture pays dividends in reduced support costs and increased customer satisfaction.

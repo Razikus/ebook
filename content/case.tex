@@ -1,0 +1,232 @@
+% Chapter 
+\chapter{Select case}
+
+\lettrine{Y}{our PCB is validated} and software development is underway. Now comes a critical decision that affects manufacturing cost, assembly complexity, and market perception: selecting or designing the enclosure.
+
+The case decision impacts every aspect of production - from assembly time to shipping costs to customer perception of quality. Choose wrong and you'll face expensive redesigns or manufacturing complications.
+
+\section{Standard vs. Custom Enclosure Decision}
+
+\subsection{Existing Standard Cases}
+
+\textbf{Kradex and established manufacturers offer proven solutions:}
+\begin{itemize}
+\item Immediate availability with known dimensions
+\item Lower upfront cost - no tooling investment
+\item Proven durability and regulatory compliance
+\item Multiple mounting options typically available
+\item Standardized assembly processes
+\end{itemize}
+
+\textbf{When to choose standard cases:}
+\begin{itemize}
+\item Production volume under 500 units
+\item PCB can be designed to fit standard dimensions
+\item No unusual interface or mounting requirements
+\item Fast time-to-market priority
+\item Limited development budget
+\end{itemize}
+
+\subsection{Custom Case Development}
+
+\textbf{Design your own enclosure when:}
+\begin{itemize}
+\item Unique form factor provides competitive advantage
+\item Standard cases don't accommodate your interfaces
+\item Production volume justifies tooling investment
+\item Brand differentiation requires custom appearance
+\end{itemize}
+
+\section{3D Printing Technology Selection}
+
+\subsection{The Professional Standard: MJF}
+
+\textbf{Multi Jet Fusion (MJF) is the only professional 3D printing option.}
+
+Avoid these inferior technologies:
+\begin{itemize}
+\item \textbf{FDM/FFF:} Layer lines visible, poor surface finish, mechanical weakness
+\item \textbf{Resin printing:} Toxic materials, poor durability, surface quality issues
+\item \textbf{SLA:} Expensive, limited materials, post-processing complexity
+\end{itemize}
+
+\textbf{MJF advantages for production prototypes:}
+\begin{itemize}
+\item Professional surface finish straight from printer
+\item Excellent dimensional accuracy and repeatability
+\item Strong, functional parts suitable for real-world testing
+\item No visible layer lines or support marks
+\item Cost-effective for complex geometries
+\end{itemize}
+
+\textbf{Real MJF prototype costs (Cubic Inch):}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Part} & \textbf{Quantity} & \textbf{Cost (EUR)} \\
+\hline
+Bottom enclosure & 2 units & €38 \\
+Top cover & 2 units & €9 \\
+Shipping & - & €11 \\
+VAT & - & €10 \\
+\hline
+\textbf{Total order} & \textbf{4 parts} & \textbf{€100} \\
+\hline
+\end{tabular}
+\caption{MJF prototype costs - approximately €50 per complete enclosure including delivery}
+\end{table}
+
+Material: HP 3D High Reusability PA 12 (Nylon)
+Tolerance: ±0.3mm
+Delivery: 6 working days
+Finish: Dye Black
+
+\section{Manufacturing Progression Strategy}
+
+\subsection{Three-Stage Development Path}
+
+\textbf{Stage 1: Initial Prototyping (1-5 units)}
+Use any available 3D printing technology for basic fit testing and PCB mounting validation. Quality is secondary to speed and cost at this stage.
+
+\textbf{Stage 2: Functional Prototypes (5-50 units)}
+Switch to MJF printing for professional appearance and mechanical properties. Use these units for customer demonstrations and extended testing.
+
+\textbf{Stage 3: Production Decision Point (50+ units)}
+At 50 units sold, evaluate injection molding. The break-even point varies by complexity, but tooling costs typically amortize around 100-500 units.
+
+\section{Mounting Strategy}
+
+\subsection{Installation Method Planning}
+
+\textbf{Wall mounting considerations:}
+\begin{itemize}
+\item Standard wall anchor compatibility
+\item Cable management and strain relief
+\item Access to status indicators and interfaces
+\item Theft resistance and tamper detection
+\item Level mounting with adjustment capability
+\end{itemize}
+
+\textbf{Desktop device requirements:}
+\begin{itemize}
+\item Stable base preventing tip-over
+\item Non-slip feet or weighted base
+\item Cable routing that doesn't interfere with stability
+\item User interface accessibility and viewing angles
+\end{itemize}
+
+\subsection{PCB Mounting Methodology}
+
+\textbf{Professional PCB mounting requires precise measurements:}
+\begin{itemize}
+\item Use calipers to measure exact PCB dimensions
+\item Account for component clearance above PCB surface
+\item Include tolerance for manufacturing variations (±0.2mm typical)
+\item Verify mounting hole positions with multiple PCB samples
+\item Design for thermal expansion if operating temperatures vary
+\end{itemize}
+
+\begin{tcolorbox}[colback=blue!10,colframe=blue!75!black,title=Alternative: Hot Glue Mounting]
+For non-heating devices and low-volume production, hot glue provides acceptable PCB mounting. This eliminates precision machining requirements and accommodates PCB variations. Only suitable when device temperature remains below 60°C.
+\end{tcolorbox}
+
+\section{Injection Molding Considerations}
+
+\subsection{Always Design with Injection Molding in Mind}
+
+Even if starting with 3D printing, design case geometry compatible with injection molding from the beginning. Redesigning for injection molding later is expensive and time-consuming.
+
+\textbf{Injection mold-friendly design principles:}
+\begin{itemize}
+\item \textbf{Keep it simple:} Minimize complex geometries and undercuts
+\item \textbf{Uniform wall thickness:} Typically 1.5-3mm for electronics enclosures
+\item \textbf{Draft angles:} 1-2 degrees minimum on all vertical surfaces
+\item \textbf{Avoid thin features:} Minimum feature size depends on material choice
+\item \textbf{Split line planning:} Consider where mold halves separate
+\end{itemize}
+
+\subsection{Injection Molding Timeline}
+
+\textbf{Recommended progression:}
+\begin{enumerate}
+\item \textbf{1-5 units:} Any 3D printing for basic validation
+\item \textbf{5-50 units:} MJF printing for professional appearance
+\item \textbf{50+ units sold:} Evaluate injection molding economics
+\item \textbf{1000+ units planned:} Injection molding becomes cost-effective
+\end{enumerate}
+
+\textbf{Fullbax Formy partnership} provides established China manufacturing relationships, reducing risk and complexity for European companies entering injection molding.
+
+\section{Design Simplicity Imperative}
+
+\subsection{Complexity Kills Profitability}
+
+Every additional feature, curve, or detail increases manufacturing cost and complexity. Optimize for manufacturability, not aesthetic sophistication.
+
+\textbf{Cost-driving complexity factors:}
+\begin{itemize}
+\item Multiple split lines requiring precision alignment
+\item Threaded inserts or complex mechanical features
+\item Multiple materials or overmolding requirements
+\item Tight tolerances beyond standard manufacturing capability
+\item Surface textures or decorative elements
+\end{itemize}
+
+\textbf{Simplicity benefits:}
+\begin{itemize}
+\item Lower tooling costs and faster delivery
+\item Reduced assembly time and labor costs
+\item Fewer quality control points and failure modes
+\item Easier inventory management and logistics
+\item Simplified service and repair procedures
+\end{itemize}
+
+\section{Case Selection Workflow}
+
+\subsection{Systematic Decision Process}
+
+\begin{enumerate}
+\item \textbf{Define requirements:} Interface access, mounting method, environmental conditions
+\item \textbf{Survey standard options:} Evaluate Kradex and similar catalogs
+\item \textbf{PCB fit analysis:} Can board be designed to fit standard enclosure?
+\item \textbf{Cost comparison:} Standard case + PCB redesign vs. custom tooling
+\item \textbf{Volume projection:} Realistic sales forecast over 2-year period
+\item \textbf{Prototype with cheapest option:} Validate assumptions before committing
+\item \textbf{Scale manufacturing method:} Progress through 3D printing to injection molding
+\end{enumerate}
+
+\section{Quality and Durability Testing}
+
+\subsection{Enclosure Validation Requirements}
+
+\textbf{Mechanical testing:}
+\begin{itemize}
+\item Drop testing from 1-meter height (simulate installation accidents)
+\item Connector insertion/removal cycling (500+ cycles minimum)
+\item Environmental stress testing (temperature, humidity cycling)
+\item UV exposure testing for outdoor or window-mounted devices
+\end{itemize}
+
+\textbf{Thermal performance:}
+\begin{itemize}
+\item Internal temperature monitoring during extended operation
+\item Hot spot identification using thermal imaging
+\item Ventilation effectiveness measurement
+\item Component derating analysis based on actual temperatures
+\end{itemize}
+
+\section{Common Case Selection Mistakes}
+
+\textbf{Overengineering aesthetic appeal:} Complex curves and features dramatically increase cost without improving functionality.
+
+\textbf{Ignoring assembly labor:} Cases requiring extensive manual assembly increase per-unit cost and quality variation.
+
+\textbf{Premature injection molding:} Committing to tooling before validating market demand and design stability.
+
+\textbf{Inadequate thermal planning:} Failing to account for heat generation in enclosed operation.
+
+\textbf{Poor cable management:} Not planning strain relief and connector access during case design.
+
+Remember: the best case is the simplest one that meets functional requirements and scales cost-effectively with production volume. Aesthetic sophistication should never compromise manufacturability or profitability.

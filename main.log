@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.20)  22 AUG 2025 00:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.20)  22 AUG 2025 12:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -707,13 +707,25 @@ File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
 Package: listings 2024/09/23 1.10c (Carsten Heinz)
 
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks40
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks40
-\verbatim@line=\toks41
+\every@verbatim=\toks41
+\verbatim@line=\toks42
 \verbatim@in@stream=\read4
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/environ/environ.sty
@@ -722,7 +734,7 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (/usr/local/texlive/2025/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
-\@envbody=\toks42
+\@envbody=\toks43
 )
 \tcb@titlebox=\box70
 \tcb@upperbox=\box71
@@ -755,7 +767,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen284
 \Gm@layouthoffset=\dimen285
 \Gm@layoutvoffset=\dimen286
-\Gm@dimlist=\toks43
+\Gm@dimlist=\toks44
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
@@ -804,7 +816,7 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \aftertitleunit=\skip87
 \ttl@plus=\dimen287
 \ttl@minus=\dimen288
-\ttl@toksa=\toks44
+\ttl@toksa=\toks45
 \titlewidth=\dimen289
 \titlewidthlast=\dimen290
 \titlewidthfirst=\dimen291
@@ -826,7 +838,7 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthL=\skip99
 \f@nch@widthC=\skip100
 \f@nch@widthR=\skip101
-\@temptokenb=\toks45
+\@temptokenb=\toks46
 ))
 (./main.aux)
 \openout1 = `main.aux'.
@@ -885,12 +897,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 \scratchbox=\box80
 \nofMPsegments=\count322
 \nofMParguments=\count323
-\everyMPshowfont=\toks46
+\everyMPshowfont=\toks47
 \MPscratchCnt=\count324
 \MPscratchDim=\dimen293
 \MPnumerator=\count325
 \makeMPintoPDFobject=\count326
-\everyMPtoPDFconversion=\toks47
+\everyMPtoPDFconversion=\toks48
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1092,13 +1104,22 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
 
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
 
 [5
 
@@ -1107,13 +1128,21 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 [6]
 
-[7])
+[7]
+
+[8]
+
+[9]
+
+[10]
+
+[11])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
 
 
-[8]) (./content/chapter1.tex
+[12]) (./content/analyze.tex
 Cap\'{\i }tulo 1.
 Package lettrine.sty Info: Targeted height = 22.69649pt
 (lettrine.sty)             (for loversize=0, accent excluded),
@@ -1185,7 +1214,7 @@ nsPro-TLF/regular/n/12 (+10) Up-date card ba-lan-ces and
 
 [9]
 
-[10]) (./content/chapter2.tex
+[10]) (./content/vision.tex
 
 [11]
 Cap\'{\i }tulo 2.
@@ -1268,7 +1297,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
 
 
-[19]) (./content/chapter4.tex
+[19]) (./content/spider.tex
 
 [20]
 
@@ -1360,35 +1389,124 @@ om-plete CM4 RFID bo-ard
 
 [29]
 
-[30]) (./content/chapter5.tex
+[30]) (./content/software.tex
 
 [31]
 Cap\'{\i }tulo 4.
 Package lettrine.sty Info: Targeted height = 22.69649pt
 (lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 22.69646pt (L);
-(lettrine.sty)             reported on input line 5.
+(lettrine.sty)             Lettrine height = 22.69646pt (Y);
+(lettrine.sty)             reported on input line 4.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 5.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 18.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 5.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 5.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 5.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 5.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 5.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 5.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 7.0pt on input line 5.
-) (./content/chapter6.tex
+(Font)              scaled to size 10.0pt on input line 18.
+LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 18.
+
+Underfull \vbox (badness 2253) has occurred while \output is active []
+
+
 
 [32
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[33] (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+
+[34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[35]
+
+[36]
+
+[37]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[38]
+Overfull \vbox (12.96904pt too high) has occurred while \output is active []
+
+
+
+[39] (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[40]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[41]
+
+[42]
+Overfull \hbox (37.1933pt too wide) in paragraph at lines 286--287
+[]\T1/SourceCodePro-TLF/m/n/12 dd if=/dev/mmcblk0 of=working-system-v1.0.img 
+ []
+
+
+
+[43]
+
+[44]
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Graceful re-co-
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 387--388
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Structured, mi-ni-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Hardcoded va-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--390
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Automated re-
+ []
+
+
+Underfull \hbox (badness 4699) in paragraph at lines 390--390
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Manual ob-ser-va-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Automated he-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Fallback me-cha-
+ []
+
+) (./content/prodcode.tex
+
+[46]
 Cap\'{\i }tulo 5.
 Package lettrine.sty Info: Targeted height = 22.69649pt
 (lettrine.sty)             (for loversize=0, accent excluded),
@@ -1402,11 +1520,11 @@ l bug, ad-ding a customer-
 
 
 
-[33
+[47
 
 ]
 
-[34]
+[48]
 Underfull \hbox (badness 1715) in paragraph at lines 28--29
 []\T1/SourceSansPro-TLF/bold/n/12 (+10) Consider Ba-lena Cloud: \T1/SourceSansP
 ro-TLF/regular/n/12 (+10) Pro-vi-des enterprise-grade re-
@@ -1423,11 +1541,11 @@ Underfull \vbox (badness 1320) has occurred while \output is active []
 
 
 
-[35]
+[49]
 
-[36]
+[50]
 
-[37]
+[51]
 Underfull \hbox (badness 1803) in paragraph at lines 126--127
 []\T1/SourceSansPro-TLF/regular/n/12 (+10) Your de-vice should work im-me-di-a-
 tely upon power-up, re-
@@ -1435,35 +1553,69 @@ tely upon power-up, re-
 
 
 
-[38]
+[52]
 
-[39] (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-)
-(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-)
+[53]
 Underfull \vbox (badness 1521) has occurred while \output is active []
 
 
 
-[40]
+[54]
 
-[41]
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+\T1/SourceSansPro-TLF/bold/n/12 (+10) Dependencies di-sap-pear without war-ning
+. Bac-kup
+ []
 
-[42]) (./content/chapter7.tex
 
-[43]
+
+[56]
+
+[57]) (./content/intopcb.tex
+
+[58]
 Cap\'{\i }tulo 6.
 Package lettrine.sty Info: Targeted height = 22.69649pt
 (lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 22.69646pt (L);
-(lettrine.sty)             reported on input line 5.
-) (./content/chapter8.tex
+(lettrine.sty)             Lettrine height = 22.69646pt (Y);
+(lettrine.sty)             reported on input line 4.
 
-[44
+
+[59
 
 ]
+
+[60]
+
+[61]
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+\T1/SourceSansPro-TLF/regular/n/12 (+10) Minimize fi-eld as-sem-bly by using pr
+o-fes-si-o-nal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+\T1/SourceSansPro-TLF/regular/n/12 (+10) ca-ble as-sem-blies from LCSC Cus-tom 
+Ca-bles
+ []
+
+
+
+[62]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[63]
+
+[64]
+
+[65]
+
+[66]) (./content/hardwarechecklist.tex
+
+[67]
 Cap\'{\i }tulo 7.
 Package lettrine.sty Info: Targeted height = 22.69649pt
 (lettrine.sty)             (for loversize=0, accent excluded),
@@ -1471,127 +1623,321 @@ Package lettrine.sty Info: Targeted height = 22.69649pt
 (lettrine.sty)             reported on input line 4.
 
 
-[45
+[68
 
 ]
+
+[69]
+
+[70]
+
+[71]
+
+[72]
+
+[73]
+
+[74]
+
+[75]
+
+[76]) (./content/case.tex
+
+[77]
+Cap\'{\i }tulo 8.
+Package lettrine.sty Info: Targeted height = 22.69649pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 22.69646pt (Y);
+(lettrine.sty)             reported on input line 4.
+
+
+[78
+
+]
+
+[79]
+LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/b/n' aliased to
+(Font)              `TS1/SourceSansPro-TLF/bold/n' on input line 75.
+LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/bold/n' will be
+(Font)              scaled to size 12.0pt on input line 75.
+
+
+[80]
+
+[81]
+
+[82]
+
+[83]
+
+[84]
+Underfull \hbox (badness 1226) in paragraph at lines 207--208
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Connector in-ser-ti-on/-re-mo-val cy
+-cling (500+ cy-cles mi-ni-
+ []
+
+
+
+[85]) (./content/certification.tex
+
+[86]
+Cap\'{\i }tulo 9.
+Package lettrine.sty Info: Targeted height = 22.69649pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 22.69646pt (C);
+(lettrine.sty)             reported on input line 4.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[87
+
+]
+
+[88]
+
+[89]
+
+[90]
+
+[91]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[46]
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
-\T1/SourceSansPro-TLF/regular/n/12 (+10) Minimize fi-eld as-sem-bly by using pr
-o-fes-si-o-nal
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
-\T1/SourceSansPro-TLF/regular/n/12 (+10) ca-ble as-sem-blies from LCSC Cus-tom 
-Ca-bles
+[92]
+Underfull \hbox (badness 1748) in paragraph at lines 187--188
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Enclosure and as-sem-bly af-fect ele
+c-tro-mag-ne-tic per-for-
  []
 
 
 
-[47]
+[93]
+Underfull \vbox (badness 3735) has occurred while \output is active []
 
-[48]
 
-[49]
 
-[50]
+[94]
 
-[51]) (./content/chapter9.tex
+[95]
 
-[52]
-Cap\'{\i }tulo 8.
-Package lettrine.sty Info: Targeted height = 22.69649pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 22.69646pt (L);
-(lettrine.sty)             reported on input line 5.
-) (./content/chapter10.tex
+[96]
 
-[53
+[97]
+Underfull \hbox (badness 2452) in paragraph at lines 293--294
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Maintain de-tai-led do-cu-men-ta-tio
+n th-roughout de-ve-lop-
+ []
 
-]
-Cap\'{\i }tulo 9.
-Package lettrine.sty Info: Targeted height = 22.69649pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 22.69646pt (L);
-(lettrine.sty)             reported on input line 5.
-) (./content/chapter11.tex
+) (./content/100boards.tex
 
-[54
-
-]
+[98]
 Cap\'{\i }tulo 10.
 Package lettrine.sty Info: Targeted height = 22.69649pt
 (lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 22.69646pt (L);
-(lettrine.sty)             reported on input line 5.
-) (./content/chapter12.tex
+(lettrine.sty)             Lettrine height = 22.69646pt (T);
+(lettrine.sty)             reported on input line 4.
 
-[55
+
+[99
 
 ]
+
+[100]
+
+[101]
+
+[102]
+
+[103]
+
+[104]
+
+[105]
+
+[106]
+
+[107]
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+[]\T1/SourceSansPro-TLF/bold/n/12 (+10) 1000+ units: \T1/SourceSansPro-TLF/regu
+lar/n/12 (+10) Eva-lu-ate con-tract ma-nu-fac-tu-ring part-
+ []
+
+
+Underfull \hbox (badness 4805) in paragraph at lines 270--271
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) This phase pro-ves that hard-ware en
+-tre-pre-neurship isn't
+ []
+
+
+
+[108]) (./content/document.tex
+
+[109]
 Cap\'{\i }tulo 11.
 Package lettrine.sty Info: Targeted height = 22.69649pt
 (lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 22.69646pt (L);
-(lettrine.sty)             reported on input line 5.
-) (./content/chapter13.tex
+(lettrine.sty)             Lettrine height = 22.69646pt (D);
+(lettrine.sty)             reported on input line 4.
 
-[56
+Underfull \vbox (badness 5446) has occurred while \output is active []
+
+
+
+[110
 
 ]
+Underfull \hbox (badness 7486) in paragraph at lines 14--15
+[]\T1/SourceSansPro-TLF/bold/n/12 (+10) The mon-key test prin-ci-ple: \T1/Sourc
+eSansPro-TLF/regular/n/12 (+10) Write pro-ce-du-res de-tai-led
+ []
+
+
+
+[111]
+
+[112]
+Underfull \hbox (badness 2452) in paragraph at lines 106--107
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Press CM4 down un-til fully se-a-ted
+ (Vi-deo: CM4-
+ []
+
+
+
+[113]
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
+[]\T1/SourceSansPro-TLF/bold/n/12 (+10) Root
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) CM4 boot
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Wrong
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+\T1/SourceSansPro-TLF/regular/n/12 (+10) image
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Update
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+\T1/SourceSansPro-TLF/regular/n/12 (+10) SOP-SW-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) PCB to-le-
+ []
+
+
+Underfull \hbox (badness 3679) in paragraph at lines 134--134
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Revise me-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Cable dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Insufficient
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Design
+ []
+
+
+Overfull \hbox (1.50256pt too wide) in paragraph at lines 135--136
+[]\T1/SourceSansPro-TLF/regular/n/12 (-10) Planning| 
+ []
+
+
+Overfull \hbox (12.39029pt too wide) in paragraph at lines 129--138
+ [][] 
+ []
+
+
+Underfull \vbox (badness 1178) has occurred while \output is active []
+
+
+
+[114]
+
+[115]
+
+[116]
+
+[117]
+
+[118]
+
+[119]) (./content/repeat.tex
+
+[120]
+
+[121]
 Cap\'{\i }tulo 12.
 Package lettrine.sty Info: Targeted height = 22.69649pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 22.69646pt (S);
 (lettrine.sty)             reported on input line 4.
 
-Underfull \vbox (badness 1117) has occurred while \output is active []
 
-
-
-[57
+[122
 
 ]
 
-[58]
-LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 76.
-LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 78.
+[123]
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[59]
-Underfull \hbox (badness 3009) in paragraph at lines 104--105
-[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Remote up-date ca-pa-bi-lity is es-s
-en-tial but dan-ge-rous.
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[60]
-
-[61]
-Underfull \hbox (badness 3612) in paragraph at lines 153--154
-[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Competitor pro-ducts of-fe-ring 50% 
-bet-ter pri-ce/-per-for-
+[124]
+Underfull \hbox (badness 2573) in paragraph at lines 88--89
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Monitor end-of-life an-noun-ce-ments
+ for cri-ti-cal com-po-
  []
 
 
 
-[62]) (./content/appendix1.tex
+[125]
+Underfull \hbox (badness 1117) in paragraph at lines 128--129
+\T1/SourceSansPro-TLF/regular/n/12 (+10) pa-nies from com-pe-ti-tors. This is w
+here you bu-ild cus-to-mer
+ []
 
-[63]
+
+
+[126]
+
+[127]
+
+[128]
+
+[129]
+Underfull \hbox (badness 2521) in paragraph at lines 248--249
+[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Higher pro-fit mar-gins from es-ta-b
+lished sup-plier re-la-ti-
+ []
+
+
+
+[130]) (./content/appendix1.tex
+
+[131]
 Underfull \hbox (badness 10000) in paragraph at lines 14--16
 []\T1/SourceSansPro-TLF/bold/n/12 (+10) Mouser Elec-tro-nics \T1/SourceSansPro-
 TLF/regular/n/12 (+10) (https://www.mouser.com) Si-mi-lar
@@ -1608,7 +1954,7 @@ Underfull \vbox (badness 7415) has occurred while \output is active []
 
 
 
-[64
+[132
 
 ]
 Underfull \hbox (badness 3250) in paragraph at lines 33--35
@@ -1647,7 +1993,7 @@ n-te-gra-ted RFID, RTC, and
 
 
 
-[65]
+[133]
 Overfull \hbox (12.20932pt too wide) in paragraph at lines 52--54
 []\T1/SourceSansPro-TLF/bold/n/12 (-10) CM4/CM5 Pro-gram-mer \T1/SourceSansPro-
 TLF/regular/n/12 (-10) (https://shop.razniewski.eu/p/cm4prog)
@@ -1661,14 +2007,14 @@ Underfull \hbox (badness 7468) in paragraph at lines 52--54
 
 
 
-[66]
+[134]
 Underfull \vbox (badness 4595) has occurred while \output is active []
 
 
 
-[67])
+[135])
 
-[68] (./frontmatter/backpage.tex
+[136] (./frontmatter/backpage.tex
 Underfull \hbox (badness 4673) in paragraph at lines 26--27
 []\T1/SourceSansPro-TLF/regular/n/12 (+10) This prac-ti-cal guide ta-kes you fr
 om pro-totype
@@ -1688,7 +2034,7 @@ ro-duc-tion
 
 )
 
-[69
+[137
 
 
 ] (./main.aux)
@@ -1696,30 +2042,25 @@ ro-duc-tion
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 23952 strings out of 473190
- 489667 string characters out of 5715800
- 1234440 words of memory out of 5000000
- 46407 multiletter control sequences out of 15000+600000
- 806660 words of font info for 292 fonts, out of 8000000 for 9000
+ 24735 strings out of 473190
+ 498944 string characters out of 5715800
+ 1236380 words of memory out of 5000000
+ 47186 multiletter control sequences out of 15000+600000
+ 787959 words of font info for 288 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,108p,1047b,1527s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,108p,1001b,1527s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/adobe/sourcecodepro/SourceCod
-ePro-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/adobe/sourcecodep
-ro/SourceCodePro-It.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/adobe/s
-ourcecodepro/SourceCodePro-Regular.pfb></usr/local/texlive/2025/texmf-dist/font
-s/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb></usr/local/texlive/2025/tex
-mf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-It.pfb></usr/local/texliv
-e/2025/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb>
-Output written on main.pdf (79 pages, 481361 bytes).
+ePro-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/adobe/sourcesa
+nspro/SourceSansPro-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/ad
+obe/sourcesanspro/SourceSansPro-It.pfb></usr/local/texlive/2025/texmf-dist/font
+s/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb></usr/local/texlive/2025/
+texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (151 pages, 525870 bytes).
 PDF statistics:
- 331 PDF objects out of 1000 (max. 8388607)
- 215 compressed objects within 3 object streams
+ 560 PDF objects out of 1000 (max. 8388607)
+ 372 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 100466 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 87666 words of extra memory for PDF output out of 89155 (max. 10000000)
 
