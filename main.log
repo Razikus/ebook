@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.20)  22 AUG 2025 12:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.20)  22 AUG 2025 14:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1370,12 +1370,6 @@ LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/m/n' will be
 
 
 [26]
-Overfull \hbox (43.81859pt too wide) in paragraph at lines 124--124
-[]\T1/SourceCodePro-TLF/m/n/12 LED    -> GPIO 24 (with current limiting resisto
-r)[] 
- []
-
-
 Underfull \hbox (badness 1377) in paragraph at lines 129--130
 []\T1/SourceSansPro-TLF/regular/n/12 (+10) For fas-ter pro-toty-ping, use the c
 om-plete CM4 RFID bo-ard
@@ -1950,57 +1944,60 @@ Underfull \hbox (badness 1442) in paragraph at lines 14--16
  []
 
 
-Underfull \vbox (badness 7415) has occurred while \output is active []
+Underfull \hbox (badness 2310) in paragraph at lines 17--19
+[]\T1/SourceSansPro-TLF/bold/n/12 (+10) Farnell \T1/SourceSansPro-TLF/regular/n
+/12 (+10) (https://www.farnell.com) Ma-jor glo-bal dis-tri-bu-tor
+ []
 
 
 
 [132
 
 ]
-Underfull \hbox (badness 3250) in paragraph at lines 33--35
+Underfull \hbox (badness 3250) in paragraph at lines 36--38
 \T1/SourceSansPro-TLF/regular/n/12 (+10) Outs-tan-ding cus-tom ca-ble ma-nu-fac
 -tu-ring. Clean do-cu-men-
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 33--35
+Underfull \hbox (badness 1371) in paragraph at lines 36--38
 \T1/SourceSansPro-TLF/regular/n/12 (+10) ta-tion, re-a-so-na-ble pri-cing, and 
 re-li-a-ble qua-lity. Es-sen-tial for
  []
 
 
-Underfull \hbox (badness 7576) in paragraph at lines 41--43
+Underfull \hbox (badness 7576) in paragraph at lines 44--46
 []\T1/SourceSansPro-TLF/bold/n/12 (+10) Cubic Inch \T1/SourceSansPro-TLF/regula
 r/n/12 (+10) (https://cubicinch.pl/en/home/) Le-a-ding MJF
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+[133]
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
 \T1/SourceSansPro-TLF/bold/n/12 (+10) CM4/CM5 Pro-duc-tion Base Bo-ard
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--51
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
 \T1/SourceSansPro-TLF/regular/n/12 (+10) (https://shop.razniewski.eu/p/cm4pb) C
 us-tom base bo-ard
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 49--51
+Underfull \hbox (badness 1675) in paragraph at lines 52--54
 \T1/SourceSansPro-TLF/regular/n/12 (+10) de-sig-ned for pro-duc-tion use with i
 n-te-gra-ted RFID, RTC, and
  []
 
 
-
-[133]
-Overfull \hbox (12.20932pt too wide) in paragraph at lines 52--54
+Overfull \hbox (12.20932pt too wide) in paragraph at lines 55--57
 []\T1/SourceSansPro-TLF/bold/n/12 (-10) CM4/CM5 Pro-gram-mer \T1/SourceSansPro-
 TLF/regular/n/12 (-10) (https://shop.razniewski.eu/p/cm4prog)
  []
 
 
-Underfull \hbox (badness 7468) in paragraph at lines 52--54
+Underfull \hbox (badness 7468) in paragraph at lines 55--57
 \T1/SourceSansPro-TLF/regular/n/12 (+10) li-a-ble flashing and re-co-very of CM
 4/CM5 mo-du-les du-ring
  []
@@ -2008,28 +2005,13 @@ Underfull \hbox (badness 7468) in paragraph at lines 52--54
 
 
 [134]
-Underfull \vbox (badness 4595) has occurred while \output is active []
-
-
 
 [135])
 
 [136] (./frontmatter/backpage.tex
-Underfull \hbox (badness 4673) in paragraph at lines 26--27
-[]\T1/SourceSansPro-TLF/regular/n/12 (+10) This prac-ti-cal guide ta-kes you fr
-om pro-totype
- []
-
-
-Underfull \hbox (badness 2452) in paragraph at lines 26--27
-\T1/SourceSansPro-TLF/regular/n/12 (+10) to market-ready pro-duct. Ba-sed on re
-al ex-pe-ri-
- []
-
-
-Underfull \hbox (badness 7649) in paragraph at lines 34--35
-[]\T1/SourceSansPro-TLF/regular/n/12 (+10) Build re-li-a-ble pro-toty-pes and p
-ro-duc-tion
+Underfull \hbox (badness 2050) in paragraph at lines 42--43
+[]\T1/SourceSansPro-TLF/bold/n/12 (+10) For en-gi-ne-ers and en-tre-pre-neurs r
+e-ady to
  []
 
 )
@@ -2046,7 +2028,7 @@ L3 programming layer <2025-01-18>
 Here is how much of TeX's memory you used:
  24735 strings out of 473190
  498944 string characters out of 5715800
- 1236380 words of memory out of 5000000
+ 1236383 words of memory out of 5000000
  47186 multiletter control sequences out of 15000+600000
  787959 words of font info for 288 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2057,7 +2039,7 @@ nspro/SourceSansPro-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/ad
 obe/sourcesanspro/SourceSansPro-It.pfb></usr/local/texlive/2025/texmf-dist/font
 s/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb></usr/local/texlive/2025/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (151 pages, 525870 bytes).
+Output written on main.pdf (151 pages, 526075 bytes).
 PDF statistics:
  560 PDF objects out of 1000 (max. 8388607)
  372 compressed objects within 4 object streams
